@@ -71,6 +71,23 @@ export function getFilteredColors(
     );
   });
 
+  // 按名称去重，同名只保留第一个（如数据中有重复"月白"等）
+  const seenNames = new Set<string>();
+  result = result.filter((c) => {
+    if (seenNames.has(c.name)) return false;
+    seenNames.add(c.name);
+    return true;
+  });
+
+  // 按 hex 去重，同色值只保留第一个（如竹青/墨绿同#2E7D32）
+  const seenHex = new Set<string>();
+  result = result.filter((c) => {
+    const key = c.hex.toUpperCase();
+    if (seenHex.has(key)) return false;
+    seenHex.add(key);
+    return true;
+  });
+
   return result.slice(0, 120);
 }
 

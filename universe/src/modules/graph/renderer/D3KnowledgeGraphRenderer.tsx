@@ -77,6 +77,8 @@ export default function D3KnowledgeGraphRenderer({
         g.attr("transform", event.transform);
       });
     svg.call(zoom);
+    // 禁用默认双击缩放，改为双击颜色节点进入详情
+    svg.on("dblclick.zoom", null);
 
     const link = g
       .append("g")
@@ -94,6 +96,9 @@ export default function D3KnowledgeGraphRenderer({
       .attr("cursor", "pointer")
       .on("click", (_, d) => {
         onNodeSelect(d.id);
+      })
+      .on("dblclick", (e, d) => {
+        e.stopPropagation();
         if (d.type === "color") onColorNodeSelect(d.id);
       })
       .call(

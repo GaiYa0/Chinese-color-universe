@@ -1,6 +1,6 @@
 import { fetchColors } from "@/services/data/data";
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import BackToGalaxyLink from "./BackToGalaxyLink";
 
 interface Props {
   params: Promise<{ name: string }>;
@@ -16,12 +16,7 @@ export default async function ColorDetailPage({ params }: Props) {
   return (
     <main className="cosmic-bg min-h-screen pt-24 pb-16">
       <div className="mx-auto max-w-2xl px-6">
-        <Link
-          href="/"
-          className="mb-8 inline-flex items-center gap-2 text-white/60 transition hover:text-white"
-        >
-          ← 返回宇宙
-        </Link>
+        <BackToGalaxyLink />
         <div className="glass-card rounded-2xl p-8">
           <div
             className="mb-6 h-32 rounded-xl"

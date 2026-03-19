@@ -27,7 +27,7 @@ export default function GalaxyToolbar({
     <div className="z-10 flex shrink-0 flex-col gap-2 px-4 py-2 sm:flex-row sm:items-center">
       <div className="shrink-0">
         <h2 className="text-lg font-semibold text-white">颜色星空 · Color Galaxy</h2>
-        <p className="text-xs text-white/50">悬停放大 · 点击聚焦 · 滚轮缩放 · 拖拽平移</p>
+        <p className="text-xs text-white/50">悬停放大 · 双击进入详情 · 滚轮缩放 · 拖拽平移</p>
       </div>
       <div className="relative max-w-xl flex-1">
         <input

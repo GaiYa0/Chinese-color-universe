@@ -107,7 +107,7 @@ export default function ColorGalaxy({ colors }: { colors: ChineseColor[] }) {
   const displayColor = activeFocusedColor ?? hoveredColor;
 
   return (
-    <div className="relative flex h-[calc(100vh-80px)]">
+    <div className="relative flex min-h-0 flex-1">
       <GalaxySidebar
         sidebarOpen={sidebarOpen}
         setSidebarOpen={setSidebarOpen}
@@ -136,47 +136,50 @@ export default function ColorGalaxy({ colors }: { colors: ChineseColor[] }) {
           setViewMode={setViewMode}
         />
 
-        <div className="relative flex-1 overflow-hidden">
-          {viewMode === "galaxy" ? (
-            <>
-              {activeFocusedColor && (
-                <button
-                  type="button"
-                  aria-label="清除当前颜色聚焦"
-                  onClick={handleClearFocus}
-                  className="absolute right-4 top-4 z-[2] rounded-full border border-white/15 bg-black/50 px-3 py-1.5 text-xs text-white/80 backdrop-blur-sm transition hover:bg-black/70"
-                >
-                  退出聚焦
-                </button>
-              )}
-              <D3GalaxyRenderer
-                nodes={nodes}
-                links={links}
-                flyToTarget={flyToTarget}
-                focusedColor={activeFocusedColor}
-                hoveredColor={hoveredColor}
-                onHoverColor={setHoveredColor}
-                onFocusColor={setFocusedColor}
-                onFlyComplete={handleFlyComplete}
-                onSelectColor={handleRendererSelect}
-                onOpenDetail={handleOpenDetail}
+        <div className="relative flex-1 min-h-0">
+          <div className="absolute inset-0 overflow-hidden">
+            {viewMode === "galaxy" ? (
+              <>
+                {activeFocusedColor && (
+                  <button
+                    type="button"
+                    aria-label="清除当前颜色聚焦"
+                    onClick={handleClearFocus}
+                    className="absolute right-4 top-4 z-[2] rounded-full border border-white/15 bg-black/50 px-3 py-1.5 text-xs text-white/80 backdrop-blur-sm transition hover:bg-black/70"
+                  >
+                    退出聚焦
+                  </button>
+                )}
+                <D3GalaxyRenderer
+                  nodes={nodes}
+                  links={links}
+                  flyToTarget={flyToTarget}
+                  focusedColor={activeFocusedColor}
+                  hoveredColor={hoveredColor}
+                  onHoverColor={setHoveredColor}
+                  onFocusColor={setFocusedColor}
+                  onFlyComplete={handleFlyComplete}
+                  onSelectColor={handleRendererSelect}
+                  onOpenDetail={handleOpenDetail}
+                />
+              </>
+            ) : (
+              <GalaxyGridView
+                filteredColors={filteredColors}
+                focusedColor={focusedColor}
+                setFocusedColor={(color) => {
+                  setFocusedColor(color);
+                  if (color) {
+                    setSelectedColor({ id: color.id, name: color.name });
+                  }
+                }}
               />
-            </>
-          ) : (
-            <GalaxyGridView
-              filteredColors={filteredColors}
-              focusedColor={focusedColor}
-              setFocusedColor={(color) => {
-                setFocusedColor(color);
-                if (color) {
-                  setSelectedColor({ id: color.id, name: color.name });
-                }
-              }}
-            />
-          )}
-
+            )}
+          </div>
           {displayColor && (
-            <GalaxyInfoCard color={displayColor} focused={Boolean(activeFocusedColor)} />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 top-0 flex items-end justify-center overflow-visible pb-5">
+              <GalaxyInfoCard color={displayColor} focused={Boolean(activeFocusedColor)} />
+            </div>
           )}
         </div>
       </div>

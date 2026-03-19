@@ -12,10 +12,10 @@ export default function GalaxyInfoCard({
   focused,
 }: GalaxyInfoCardProps) {
   return (
-    <div className="glass-card pointer-events-none absolute bottom-8 left-1/2 z-10 min-w-[280px] -translate-x-1/2 rounded-2xl p-4">
+    <div className="glass-card z-10 min-w-[280px] max-w-[90vw] shrink-0 rounded-2xl p-4 shadow-lg">
       <div className="mb-3 h-14 rounded-lg" style={{ backgroundColor: color.hex }} />
-      <p className="text-lg font-semibold text-white">{color.name}</p>
-      <p className="text-sm text-white/70">{color.hex}</p>
+      <p className="break-words text-lg font-semibold text-white">{color.name}</p>
+      <p className="break-all text-sm text-white/70">{color.hex}</p>
       {color.dynasty && (
         <p className="mt-1 text-sm text-white/60">朝代：{color.dynasty}</p>
       )}

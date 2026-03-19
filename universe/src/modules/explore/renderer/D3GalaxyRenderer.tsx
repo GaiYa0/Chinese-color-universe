@@ -120,6 +120,8 @@ export default function D3GalaxyRenderer({
           clearTimeout(hoverLeaveTimerRef.current);
           hoverLeaveTimerRef.current = null;
         }
+        // 立即更新 ref，确保下一帧就开始放大（不等 React 状态同步）
+        hoveredNameRef.current = d.name;
         // 悬停时临时固定节点，避免抖动导致频繁触发离开/进入
         (d as { fx?: number }).fx = d.x ?? 0;
         (d as { fy?: number }).fy = d.y ?? 0;
@@ -148,11 +150,6 @@ export default function D3GalaxyRenderer({
           }
           hoverLeaveTimerRef.current = null;
         }, 60);
-      })
-      .on("click", (_, d) => {
-        const next = focusedNameRef.current === d.name ? null : d;
-        onFocusColor(next);
-        if (next) onSelectColor(next);
       })
       .on("dblclick", (e, d) => {
         e.stopPropagation();
@@ -211,17 +208,13 @@ export default function D3GalaxyRenderer({
           if (animatedNode.displayRadius == null) {
             animatedNode.displayRadius = d.radius;
           }
-          if (
+          const isHovered =
             focusedNameRef.current === d.name ||
-            hoveredNameRef.current === d.name
-          ) {
-            const targetRadius = d.radius * 1.8;
-            animatedNode.displayRadius +=
-              (targetRadius - animatedNode.displayRadius) * 0.18;
-            return animatedNode.displayRadius;
-          }
-          animatedNode.displayRadius +=
-            (d.radius - animatedNode.displayRadius) * 0.18;
+            hoveredNameRef.current === d.name;
+          const targetRadius = isHovered ? d.radius * 1.8 : d.radius;
+          // 0.45 插值：更快响应，约 3-4 帧达到 90%，更自然
+          const t = 0.45;
+          animatedNode.displayRadius += (targetRadius - animatedNode.displayRadius) * t;
           return animatedNode.displayRadius;
         })
         .attr("stroke-width", (d) =>
