@@ -1,0 +1,270 @@
+/* 中国色·万物生 —— AdventureX 美学 · 宇宙探索 · 面向未知 */
+:root {
+  --void: #0a0a0f;
+  --void-deep: #06060a;
+  --surface: #12121a;
+  --surface-elevated: #1a1a24;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.15);
+  
+  --signal: #00d4aa;
+  --signal-dim: rgba(0, 212, 170, 0.6);
+  --signal-glow: rgba(0, 212, 170, 0.15);
+  --gold: #eab308;
+  --gold-dim: rgba(234, 179, 8, 0.5);
+  
+  --text: #e6edf3;
+  --text-muted: #8b949e;
+  --text-dim: #6e7681;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans SC', 'Space Grotesk', -apple-system, sans-serif;
+  background: var(--void);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(rgba(0,212,170,0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--signal);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--signal-dim);
+}
+
+/* 导航 - 极简悬浮 */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--signal);
+  text-decoration: none;
+}
+
+/* 主容器 */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 6rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Section 标题 */
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--signal);
+  margin-bottom: 0.5rem;
+}
+
+.page-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.page-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+/* 颜色卡片 */
+.color-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.color-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 212, 170, 0.08);
+}
+
+.color-swatch {
+  height: 100px;
+  width: 100%;
+}
+
+.color-card-info {
+  padding: 1rem;
+}
+
+.color-card-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.color-card-hex {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  font-family: 'Space Grotesk', monospace;
+}
+
+/* 颜色网格 */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+/* 搜索框 */
+.search-box {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 2rem;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-box::placeholder {
+  color: var(--text-dim);
+}
+
+.search-box:focus {
+  border-color: var(--signal);
+}
+
+/* 按钮 */
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--signal);
+  border-color: var(--signal);
+  color: var(--void);
+}
+
+.btn-primary:hover {
+  background: var(--signal-dim);
+  border-color: var(--signal-dim);
+}
+
+.btn-secondary {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.btn-secondary:hover {
+  border-color: var(--border-hover);
+}
+
+/* 颜色探索 - 动态文化卡片 */
+.color-exploration-card {
+  width: 140px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.color-exploration-card:hover {
+  box-shadow: 0 0 40px rgba(255,255,255,0.25), 0 0 80px rgba(0,212,170,0.2);
+  border-color: rgba(0,212,170,0.4);
+}
+
+.color-exploration-swatch {
+  height: 100px;
+  width: 100%;
+}
+
+.color-exploration-info {
+  padding: 0.75rem 1rem;
+}
+
+.color-exploration-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.color-exploration-culture {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}

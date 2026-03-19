@@ -1,0 +1,38 @@
+{
+  "name": "chinese-color-universe",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.92.0",
+    "@react-three/fiber": "^9.0.0",
+    "@react-three/postprocessing": "^3.0.4",
+    "d3": "^7.8.5",
+    "echarts": "^5.4.3",
+    "echarts-for-react": "^3.0.2",
+    "framer-motion": "^10.18.0",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "simplex-noise": "^4.0.3",
+    "three": "^0.160.0",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/d3": "^7.4.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.160.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

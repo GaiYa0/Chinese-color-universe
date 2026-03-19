@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {"id": "天青", "type": "color"},
+    {"id": "汝窑", "type": "relic"},
+    {"id": "宋代", "type": "dynasty"},
+    {"id": "朱红", "type": "color"},
+    {"id": "故宫", "type": "relic"},
+    {"id": "明代", "type": "dynasty"},
+    {"id": "石青", "type": "color"},
+    {"id": "敦煌", "type": "location"},
+    {"id": "月白", "type": "color"},
+    {"id": "影青", "type": "color"},
+    {"id": "景德镇", "type": "location"},
+    {"id": "宋徽宗", "type": "poet"},
+    {"id": "苏轼", "type": "poet"},
+    {"id": "中国红", "type": "color"},
+    {"id": "青瓷", "type": "color"},
+    {"id": "越窑", "type": "relic"},
+    {"id": "唐代", "type": "dynasty"},
+    {"id": "秘色", "type": "color"},
+    {"id": "天水碧", "type": "color"},
+    {"id": "南唐", "type": "dynasty"},
+    {"id": "靛青", "type": "color"},
+    {"id": "蓝印花布", "type": "relic"}
+  ],
+  "edges": [
+    {"from": "天青", "to": "汝窑", "weight": 1},
+    {"from": "汝窑", "to": "宋代", "weight": 1},
+    {"from": "天青", "to": "宋代", "weight": 1},
+    {"from": "朱红", "to": "故宫", "weight": 1},
+    {"from": "故宫", "to": "明代", "weight": 1},
+    {"from": "石青", "to": "敦煌", "weight": 1},
+    {"from": "天青", "to": "月白", "weight": 1},
+    {"from": "月白", "to": "影青", "weight": 1},
+    {"from": "影青", "to": "景德镇", "weight": 1},
+    {"from": "天青", "to": "宋徽宗", "weight": 1},
+    {"from": "月白", "to": "苏轼", "weight": 1},
+    {"from": "中国红", "to": "故宫", "weight": 1},
+    {"from": "青瓷", "to": "越窑", "weight": 1},
+    {"from": "越窑", "to": "唐代", "weight": 1},
+    {"from": "秘色", "to": "越窑", "weight": 1},
+    {"from": "天水碧", "to": "南唐", "weight": 1},
+    {"from": "靛青", "to": "蓝印花布", "weight": 1}
+  ],
+  "color_evolution": [
+    {"from": "石青", "to": "天青"},
+    {"from": "天青", "to": "月白"},
+    {"from": "月白", "to": "影青"},
+    {"from": "靛青", "to": "黛蓝"},
+    {"from": "朱红", "to": "中国红"},
+    {"from": "青瓷", "to": "秘色"}
+  ]
+}

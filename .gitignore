@@ -1,0 +1,47 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# Node.js
+node_modules/
+.npm
+.yarn/
+.next/
+out/
+*.tsbuildinfo
+
+# 环境变量（含敏感信息）
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# C++ 构建
+cpp/build/
+*.o
+*.a
+*.dylib
+
+# 日志
+*.log
+npm-debug.log*
+yarn-debug.log*

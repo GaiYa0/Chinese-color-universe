@@ -1,0 +1,27 @@
+{
+  "cities": [
+    {"id": "北京", "name": "北京", "x": 116, "y": 40, "colors": ["朱红", "中国红", "杏黄"], "culture": "故宫、天坛、长城"},
+    {"id": "景德镇", "name": "景德镇", "x": 117, "y": 29, "colors": ["天青", "影青", "月白", "青白"], "culture": "瓷都、御窑遗址"},
+    {"id": "敦煌", "name": "敦煌", "x": 95, "y": 40, "colors": ["石青", "赭石", "藤黄"], "culture": "莫高窟、壁画"},
+    {"id": "开封", "name": "开封", "x": 114, "y": 35, "colors": ["天青", "豆绿"], "culture": "北宋都城、汝窑"},
+    {"id": "苏州", "name": "苏州", "x": 121, "y": 31, "colors": ["藕荷", "黛蓝"], "culture": "苏绣、园林"},
+    {"id": "杭州", "name": "杭州", "x": 120, "y": 30, "colors": ["秘色", "青瓷"], "culture": "南宋都城、丝绸"},
+    {"id": "西安", "name": "西安", "x": 109, "y": 34, "colors": ["琥珀", "玄色"], "culture": "十三朝古都"},
+    {"id": "南京", "name": "南京", "x": 119, "y": 32, "colors": ["天水碧"], "culture": "六朝古都"},
+    {"id": "南通", "name": "南通", "x": 121, "y": 32, "colors": ["靛青", "靛蓝"], "culture": "蓝印花布"},
+    {"id": "汝州", "name": "汝州", "x": 113, "y": 34, "colors": ["天青"], "culture": "汝窑发源地"}
+  ],
+  "routes": [
+    {"from": "北京", "to": "开封", "distance": 650, "culture_score": 95},
+    {"from": "北京", "to": "西安", "distance": 1100, "culture_score": 98},
+    {"from": "开封", "to": "景德镇", "distance": 800, "culture_score": 90},
+    {"from": "开封", "to": "杭州", "distance": 850, "culture_score": 92},
+    {"from": "景德镇", "to": "苏州", "distance": 450, "culture_score": 88},
+    {"from": "景德镇", "to": "杭州", "distance": 400, "culture_score": 85},
+    {"from": "敦煌", "to": "西安", "distance": 1800, "culture_score": 99},
+    {"from": "苏州", "to": "杭州", "distance": 150, "culture_score": 95},
+    {"from": "南京", "to": "苏州", "distance": 250, "culture_score": 82},
+    {"from": "南京", "to": "南通", "distance": 200, "culture_score": 80},
+    {"from": "开封", "to": "汝州", "distance": 120, "culture_score": 98}
+  ]
+}
