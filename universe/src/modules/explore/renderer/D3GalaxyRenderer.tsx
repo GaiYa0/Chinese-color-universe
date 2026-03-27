@@ -46,6 +46,10 @@ export default function D3GalaxyRenderer({
   useEffect(() => {
     if (!svgRef.current || !containerRef.current) return;
 
+    // 重建时清除悬停状态，防止节点被 remove 后 pointerleave 未触发导致色球卡住放大
+    hoveredNameRef.current = null;
+    onHoverColor(null);
+
     const width = containerRef.current.clientWidth;
     const height = containerRef.current.clientHeight;
     dimsRef.current = { width, height };
@@ -92,6 +96,20 @@ export default function D3GalaxyRenderer({
     svg.call(zoom);
     // 双击用于进入详情，禁用默认双击缩放
     svg.on("dblclick.zoom", null);
+    // 鼠标离开整个画布时清除悬停，防止移动过快导致 pointerleave 漏触发
+    svg.on("pointerleave", () => {
+      if (hoverLeaveTimerRef.current) {
+        clearTimeout(hoverLeaveTimerRef.current);
+        hoverLeaveTimerRef.current = null;
+      }
+      hoveredNameRef.current = null;
+      onHoverColor(null);
+      nodes.forEach((n) => {
+        (n as { fx?: number | null }).fx = null;
+        (n as { fy?: number | null }).fy = null;
+      });
+      link.attr("stroke", "rgba(139,207,240,0.15)").attr("stroke-width", 1);
+    });
 
     const link = g
       .append("g")
@@ -145,6 +163,7 @@ export default function D3GalaxyRenderer({
           (d as { fx?: number | null }).fx = null;
           (d as { fy?: number | null }).fy = null;
           if (focusedNameRef.current !== d.name) {
+            hoveredNameRef.current = null;
             onHoverColor(null);
             link.attr("stroke", "rgba(139,207,240,0.15)").attr("stroke-width", 1);
           }

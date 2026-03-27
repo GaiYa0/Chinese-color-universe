@@ -88,7 +88,7 @@ export function getFilteredColors(
     return true;
   });
 
-  return result.slice(0, 120);
+  return result.slice(0, 200);
 }
 
 export function buildGalaxyNodes(filteredColors: ChineseColor[]): GalaxyNodeData[] {

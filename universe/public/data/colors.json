@@ -1,154 +1,4432 @@
 {
   "colors": [
-    {"id": 1, "name": "天青", "hex": "#4A5568", "rgb": [74, 85, 104], "meaning": "汝窑之色，雨后初晴", "relic": "汝窑天青釉碗", "poem": "雨过天青云破处，这般颜色作将来", "poet": "宋徽宗", "dynasty": "宋代", "solar_term": "清明", "location": "河南汝州", "story": "宋徽宗梦中见雨后天色，命汝窑烧制"},
-    {"id": 2, "name": "天水碧", "hex": "#89CFF0", "rgb": [137, 207, 240], "meaning": "南唐宫女染衣之色", "relic": "南唐服饰", "poem": "天水碧，染就一江秋色", "poet": "周密", "dynasty": "南唐", "solar_term": "立秋", "location": "南京", "story": "南唐宫女于庭院染衣，露水浸染成此色"},
-    {"id": 3, "name": "天蓝", "hex": "#4FC3F7", "rgb": [79, 195, 247], "meaning": "晴朗天空之色", "relic": "清代瓷釉", "poem": "天蓝如水月如霜", "poet": "李白", "dynasty": "清代", "solar_term": "夏至", "location": "景德镇", "story": "清代御窑创烧之天蓝釉"},
-    {"id": 4, "name": "天缥", "hex": "#B8E0E8", "rgb": [184, 224, 232], "meaning": "薄云笼罩的天空色", "relic": "宋代绢帛", "poem": "缥缈云间鹤", "poet": "白居易", "dynasty": "宋代", "solar_term": "谷雨", "location": "苏州", "story": "丝织品染色工艺代表色"},
-    {"id": 5, "name": "月白", "hex": "#E8F4F8", "rgb": [232, 244, 248], "meaning": "月夜之色，清冷雅致", "relic": "宋瓷影青", "poem": "月白风清，如此良夜何", "poet": "苏轼", "dynasty": "宋代", "solar_term": "中秋", "location": "景德镇", "story": "影青釉瓷之典型色泽"},
-    {"id": 6, "name": "石青", "hex": "#1565C0", "rgb": [21, 101, 192], "meaning": "矿物颜料，敦煌壁画主色", "relic": "敦煌壁画", "poem": "石青染就春山色", "poet": "王维", "dynasty": "唐代", "solar_term": "惊蛰", "location": "敦煌", "story": "青金石研磨而成的贵重颜料"},
-    {"id": 7, "name": "黛蓝", "hex": "#37474F", "rgb": [55, 71, 79], "meaning": "深蓝近黑，沉稳大气", "relic": "明代官服", "poem": "黛色参天二千尺", "poet": "杜甫", "dynasty": "明代", "solar_term": "大雪", "location": "北京", "story": "明代官服用色等级"},
-    {"id": 8, "name": "靛青", "hex": "#1E88E5", "rgb": [30, 136, 229], "meaning": "蓝草染成，传统染料", "relic": "蓝印花布", "poem": "青出于蓝而胜于蓝", "poet": "荀子", "dynasty": "明代", "solar_term": "小满", "location": "南通", "story": "靛蓝染艺传承千年"},
-    {"id": 9, "name": "朱红", "hex": "#C62828", "rgb": [198, 40, 40], "meaning": "故宫宫墙之色", "relic": "故宫红墙", "poem": "朱门酒肉臭", "poet": "杜甫", "dynasty": "明代", "solar_term": "冬至", "location": "北京", "story": "故宫建筑主色，象征皇权"},
-    {"id": 10, "name": "中国红", "hex": "#DC143C", "rgb": [220, 20, 60], "meaning": "喜庆吉祥，民族象征", "relic": "春节对联", "poem": "红妆素裹，分外妖娆", "poet": "毛泽东", "dynasty": "历代", "solar_term": "春节", "location": "全国各地", "story": "中华民族最具代表性的颜色"},
-    {"id": 11, "name": "绛红", "hex": "#8B0000", "rgb": [139, 0, 0], "meaning": "深红庄重", "relic": "汉代漆器", "poem": "绛唇珠袖两寂寞", "poet": "杜甫", "dynasty": "汉代", "solar_term": "寒露", "location": "长沙", "story": "马王堆漆器典型用色"},
-    {"id": 12, "name": "胭脂", "hex": "#9D2933", "rgb": [157, 41, 51], "meaning": "女子唇色，妩媚动人", "relic": "唐代仕女图", "poem": "胭脂泪，相留醉", "poet": "李煜", "dynasty": "唐代", "solar_term": "春分", "location": "长安", "story": "源自红蓝花提取的化妆品"},
-    {"id": 13, "name": "杏黄", "hex": "#FFA726", "rgb": [255, 167, 38], "meaning": "帝王专用，龙袍之色", "relic": "清代龙袍", "poem": "杏花春雨江南", "poet": "虞集", "dynasty": "清代", "solar_term": "清明", "location": "北京", "story": "清代皇帝朝服专用色"},
-    {"id": 14, "name": "藤黄", "hex": "#FFD54F", "rgb": [255, 213, 79], "meaning": "国画颜料，藤树树脂", "relic": "敦煌壁画", "poem": "藤黄柳绿报春来", "poet": "佚名", "dynasty": "唐代", "solar_term": "立春", "location": "敦煌", "story": "海藤树树脂制成的国画颜料"},
-    {"id": 15, "name": "鹅黄", "hex": "#FFF176", "rgb": [255, 241, 118], "meaning": "初生鹅雏之色", "relic": "宋代服饰", "poem": "鹅黄杨柳垂金线", "poet": "欧阳修", "dynasty": "宋代", "solar_term": "雨水", "location": "开封", "story": "宋代流行服饰配色"},
-    {"id": 16, "name": "竹青", "hex": "#2E7D32", "rgb": [46, 125, 50], "meaning": "竹子表皮之色", "relic": "竹编工艺", "poem": "竹色溪下绿", "poet": "李白", "dynasty": "宋代", "solar_term": "立夏", "location": "安吉", "story": "竹器天然色泽"},
-    {"id": 17, "name": "苍绿", "hex": "#1B5E20", "rgb": [27, 94, 32], "meaning": "深绿苍茫", "relic": "青绿山水画", "poem": "千里江山苍翠中", "poet": "王希孟", "dynasty": "宋代", "solar_term": "芒种", "location": "开封", "story": "千里江山图主色调"},
-    {"id": 18, "name": "碧绿", "hex": "#43A047", "rgb": [67, 160, 71], "meaning": "翡翠碧玉之色", "relic": "翡翠玉佩", "poem": "碧玉妆成一树高", "poet": "贺知章", "dynasty": "唐代", "solar_term": "春分", "location": "和田", "story": "和田玉之翠色"},
-    {"id": 19, "name": "青瓷", "hex": "#66BB6A", "rgb": [102, 187, 106], "meaning": "越窑青瓷釉色", "relic": "越窑青瓷", "poem": "九秋风露越窑开", "poet": "陆龟蒙", "dynasty": "唐代", "solar_term": "霜降", "location": "浙江", "story": "秘色瓷之源头"},
-    {"id": 20, "name": "柳绿", "hex": "#81C784", "rgb": [129, 199, 132], "meaning": "柳叶新绿", "relic": "宋代绘画", "poem": "两个黄鹂鸣翠柳", "poet": "杜甫", "dynasty": "宋代", "solar_term": "惊蛰", "location": "成都", "story": "春意盎然之代表色"},
-    {"id": 21, "name": "墨绿", "hex": "#2E7D32", "rgb": [46, 125, 50], "meaning": "墨中带绿", "relic": "墨锭", "poem": "墨池飞出北溟鱼", "poet": "李白", "dynasty": "明代", "solar_term": "小暑", "location": "徽州", "story": "徽墨之绿锭品类"},
-    {"id": 22, "name": "鸦青", "hex": "#37474F", "rgb": [55, 71, 79], "meaning": "乌鸦羽毛之色", "relic": "宋画", "poem": "鸦青钞配凤头鞋", "poet": "元好问", "dynasty": "元代", "solar_term": "立冬", "location": "大都", "story": "元代纸币印色"},
-    {"id": 23, "name": "玄色", "hex": "#212121", "rgb": [33, 33, 33], "meaning": "天未明之色，神秘深邃", "relic": "周代礼器", "poem": "玄之又玄，众妙之门", "poet": "老子", "dynasty": "周代", "solar_term": "冬至", "location": "洛阳", "story": "古代最高礼仪用色"},
-    {"id": 24, "name": "皂色", "hex": "#1A237E", "rgb": [26, 35, 126], "meaning": "皂角染成之黑", "relic": "秦代服饰", "poem": "皂隶之衣", "poet": "礼记", "dynasty": "秦代", "solar_term": "大雪", "location": "咸阳", "story": "古代低级官吏服色"},
-    {"id": 25, "name": "雪青", "hex": "#B39DDB", "rgb": [179, 157, 219], "meaning": "雪中紫花", "relic": "清代瓷器", "poem": "雪青衫子薄罗裳", "poet": "纳兰性德", "dynasty": "清代", "solar_term": "小雪", "location": "北京", "story": "清代流行服饰色"},
-    {"id": 26, "name": "藕荷", "hex": "#E1BEE7", "rgb": [225, 190, 231], "meaning": "莲藕皮色", "relic": "清代旗袍", "poem": "藕花深处", "poet": "李清照", "dynasty": "清代", "solar_term": "大暑", "location": "苏州", "story": "江南染坊经典配色"},
-    {"id": 27, "name": "丁香", "hex": "#9575CD", "rgb": [149, 117, 205], "meaning": "丁香花之色", "relic": "清代瓷器", "poem": "丁香空结雨中愁", "poet": "李璟", "dynasty": "清代", "solar_term": "谷雨", "location": "景德镇", "story": "珐琅彩丁香紫釉"},
-    {"id": 28, "name": "紫檀", "hex": "#4E342E", "rgb": [78, 52, 46], "meaning": "紫檀木色", "relic": "明清家具", "poem": "紫檀木匣贮明珠", "poet": "白居易", "dynasty": "明代", "solar_term": "秋分", "location": "北京", "story": "明清宫廷家具主材"},
-    {"id": 29, "name": "檀色", "hex": "#8D6E63", "rgb": [141, 110, 99], "meaning": "浅紫褐色", "relic": "宋代绘画", "poem": "檀郎谢女携手去", "poet": "李贺", "dynasty": "宋代", "solar_term": "白露", "location": "开封", "story": "宋代人物画肤色"},
-    {"id": 30, "name": "琥珀", "hex": "#FF8F00", "rgb": [255, 143, 0], "meaning": "琥珀宝石色", "relic": "汉代玉器", "poem": "琥珀初成忆旧松", "poet": "李商隐", "dynasty": "汉代", "solar_term": "秋分", "location": "西安", "story": "汉代琥珀饰品"},
-    {"id": 31, "name": "赭石", "hex": "#795548", "rgb": [121, 85, 72], "meaning": "矿物颜料", "relic": "敦煌壁画", "poem": "赭山如画", "poet": "刘禹锡", "dynasty": "唐代", "solar_term": "霜降", "location": "敦煌", "story": "国画赭石颜料来源"},
-    {"id": 32, "name": "丹砂", "hex": "#E53935", "rgb": [229, 57, 53], "meaning": "朱砂之色", "relic": "道教符箓", "poem": "丹砂点漆", "poet": "葛洪", "dynasty": "晋代", "solar_term": "夏至", "location": "龙虎山", "story": "道教炼丹术重要原料"},
-    {"id": 33, "name": "银朱", "hex": "#D32F2F", "rgb": [211, 47, 47], "meaning": "人工炼制朱红", "relic": "明清建筑", "poem": "银朱点额", "poet": "佚名", "dynasty": "明代", "solar_term": "冬至", "location": "北京", "story": "古建筑彩画用色"},
-    {"id": 34, "name": "妃色", "hex": "#F8BBD9", "rgb": [248, 187, 217], "meaning": "妃子服饰之色", "relic": "唐代服饰", "poem": "妃子笑", "poet": "杜牧", "dynasty": "唐代", "solar_term": "夏至", "location": "长安", "story": "杨贵妃喜爱的淡粉"},
-    {"id": 35, "name": "桃红", "hex": "#F48FB1", "rgb": [244, 143, 177], "meaning": "桃花之色", "relic": "清代瓷器", "poem": "人面桃花相映红", "poet": "崔护", "dynasty": "清代", "solar_term": "春分", "location": "景德镇", "story": "粉彩瓷器典型色"},
-    {"id": 36, "name": "樱草", "hex": "#FFF59D", "rgb": [255, 245, 157], "meaning": "樱草花黄", "relic": "宋代织锦", "poem": "樱草初开", "poet": "陆游", "dynasty": "宋代", "solar_term": "雨水", "location": "成都", "story": "蜀锦配色之一"},
-    {"id": 37, "name": "姜黄", "hex": "#F9A825", "rgb": [249, 168, 37], "meaning": "生姜之色", "relic": "明代服饰", "poem": "姜黄衫子", "poet": "佚名", "dynasty": "明代", "solar_term": "寒露", "location": "南京", "story": "明代民间流行色"},
-    {"id": 38, "name": "栀子", "hex": "#FFEB3B", "rgb": [255, 235, 59], "meaning": "栀子花黄", "relic": "宋代染料", "poem": "栀子比众木", "poet": "杜甫", "dynasty": "宋代", "solar_term": "夏至", "location": "江西", "story": "栀子果实可做黄色染料"},
-    {"id": 39, "name": "秋香", "hex": "#C0CA33", "rgb": [192, 202, 51], "meaning": "秋日香色", "relic": "清代瓷器", "poem": "秋香色满庭", "poet": "纳兰性德", "dynasty": "清代", "solar_term": "秋分", "location": "景德镇", "story": "康熙秋香釉"},
-    {"id": 40, "name": "艾绿", "hex": "#7CB342", "rgb": [124, 179, 66], "meaning": "艾草之绿", "relic": "端午香囊", "poem": "艾叶青青", "poet": "屈原", "dynasty": "战国", "solar_term": "端午", "location": "湖南", "story": "端午辟邪用艾色"},
-    {"id": 41, "name": "松绿", "hex": "#558B2F", "rgb": [85, 139, 47], "meaning": "松针之绿", "relic": "青绿山水", "poem": "青松寒不落", "poet": "杜甫", "dynasty": "宋代", "solar_term": "大雪", "location": "开封", "story": "山水画松树用色"},
-    {"id": 42, "name": "茶绿", "hex": "#689F38", "rgb": [104, 159, 56], "meaning": "绿茶汤色", "relic": "茶具", "poem": "茶烟绿绕", "poet": "陆羽", "dynasty": "唐代", "solar_term": "谷雨", "location": "湖州", "story": "茶经记载之茶色"},
-    {"id": 43, "name": "青白", "hex": "#E0F2F1", "rgb": [224, 242, 241], "meaning": "青白瓷釉色", "relic": "景德镇青白瓷", "poem": "青白二色", "poet": "蒋祈", "dynasty": "宋代", "solar_term": "白露", "location": "景德镇", "story": "影青瓷别称"},
-    {"id": 44, "name": "象牙", "hex": "#FFF8E1", "rgb": [255, 248, 225], "meaning": "象牙之色", "relic": "清代牙雕", "poem": "牙签万轴", "poet": "韩愈", "dynasty": "清代", "solar_term": "大寒", "location": "北京", "story": "宫廷象牙制品"},
-    {"id": 45, "name": "素色", "hex": "#FAFAFA", "rgb": [250, 250, 250], "meaning": "未染之白", "relic": "素纱襌衣", "poem": "素衣莫起风尘叹", "poet": "陆游", "dynasty": "汉代", "solar_term": "立春", "location": "长沙", "story": "马王堆素纱襌衣仅49克"},
-    {"id": 46, "name": "霜色", "hex": "#ECEFF1", "rgb": [236, 239, 241], "meaning": "晨霜之色", "relic": "宋代白瓷", "poem": "霜禽欲下先偷眼", "poet": "林逋", "dynasty": "宋代", "solar_term": "霜降", "location": "定窑", "story": "定窑白瓷釉色"},
-    {"id": 47, "name": "玉色", "hex": "#E8EAF6", "rgb": [232, 234, 246], "meaning": "和田白玉", "relic": "和田玉器", "poem": "玉在山而木润", "poet": "荀子", "dynasty": "历代", "solar_term": "秋分", "location": "和田", "story": "君子比德于玉"},
-    {"id": 48, "name": "霜白", "hex": "#F5F5F5", "rgb": [245, 245, 245], "meaning": "霜后之白", "relic": "德化白瓷", "poem": "白露为霜", "poet": "诗经", "dynasty": "明代", "solar_term": "霜降", "location": "福建", "story": "中国白瓷代表"},
-    {"id": 49, "name": "象牙白", "hex": "#FFFBF0", "rgb": [255, 251, 240], "meaning": "温润象牙白", "relic": "建白瓷", "poem": "象牙塔", "poet": "鲁迅", "dynasty": "明代", "solar_term": "小寒", "location": "德化", "story": "明代德化窑象牙白"},
-    {"id": 50, "name": "鱼肚白", "hex": "#F5F5DC", "rgb": [245, 245, 220], "meaning": "黎明天色", "relic": "宋代绘画", "poem": "鱼肚白东方", "poet": "佚名", "dynasty": "宋代", "solar_term": "春分", "location": "开封", "story": "山水画天空渲染"},
-    {"id": 51, "name": "玄青", "hex": "#1B1B1B", "rgb": [27, 27, 27], "meaning": "深青近黑", "relic": "周代冕服", "poem": "玄端章甫", "poet": "论语", "dynasty": "周代", "solar_term": "冬至", "location": "洛阳", "story": "周礼玄端服色"},
-    {"id": 52, "name": "乌金", "hex": "#1C1C1C", "rgb": [28, 28, 28], "meaning": "黑中泛金", "relic": "建窑黑釉", "poem": "乌金点点", "poet": "陆羽", "dynasty": "宋代", "solar_term": "冬至", "location": "建阳", "story": "建窑兔毫盏釉色"},
-    {"id": 53, "name": "墨色", "hex": "#263238", "rgb": [38, 50, 56], "meaning": "松烟墨色", "relic": "徽墨", "poem": "墨池飞出北溟鱼", "poet": "李白", "dynasty": "历代", "solar_term": "大雪", "location": "徽州", "story": "文房四宝之墨"},
-    {"id": 54, "name": "苍黑", "hex": "#37474F", "rgb": [55, 71, 79], "meaning": "苍茫之黑", "relic": "秦俑", "poem": "苍黑如铁", "poet": "司马迁", "dynasty": "秦代", "solar_term": "立冬", "location": "西安", "story": "兵马俑彩绘底色"},
-    {"id": 55, "name": "鸦黑", "hex": "#212121", "rgb": [33, 33, 33], "meaning": "乌鸦羽黑", "relic": "漆器", "poem": "鸦翎羽箭", "poet": "李贺", "dynasty": "战国", "solar_term": "寒露", "location": "荆州", "story": "楚式漆器黑漆"},
-    {"id": 56, "name": "影青", "hex": "#B2DFDB", "rgb": [178, 223, 219], "meaning": "青白瓷雅称", "relic": "景德镇影青瓷", "poem": "影落清波", "poet": "苏轼", "dynasty": "宋代", "solar_term": "白露", "location": "景德镇", "story": "宋代景德镇代表产品"},
-    {"id": 57, "name": "秘色", "hex": "#80CBC4", "rgb": [128, 203, 196], "meaning": "秘色瓷之色", "relic": "法门寺秘色瓷", "poem": "夺得千峰翠色来", "poet": "陆龟蒙", "dynasty": "唐代", "solar_term": "春分", "location": "浙江", "story": "越窑秘色瓷专供皇家"},
-    {"id": 58, "name": "官绿", "hex": "#388E3C", "rgb": [56, 142, 60], "meaning": "官方绿色", "relic": "明代官服", "poem": "官绿袍", "poet": "佚名", "dynasty": "明代", "solar_term": "立夏", "location": "南京", "story": "明代六品以下官服"},
-    {"id": 59, "name": "豆绿", "hex": "#66BB6A", "rgb": [102, 187, 106], "meaning": "青豆之色", "relic": "钧窑", "poem": "豆绿初熟", "poet": "范成大", "dynasty": "宋代", "solar_term": "小满", "location": "禹州", "story": "钧窑豆绿釉"},
-    {"id": 60, "name": "瓜皮绿", "hex": "#43A047", "rgb": [67, 160, 71], "meaning": "西瓜皮绿", "relic": "清代瓷器", "poem": "瓜皮绿釉", "poet": "唐英", "dynasty": "清代", "solar_term": "大暑", "location": "景德镇", "story": "康熙创烧瓜皮绿"},
-    {"id": 61, "name": "孔雀绿", "hex": "#009688", "rgb": [0, 150, 136], "meaning": "孔雀羽毛绿", "relic": "元代釉陶", "poem": "孔雀东南飞", "poet": "乐府", "dynasty": "元代", "solar_term": "立夏", "location": "景德镇", "story": "孔雀绿釉陶器"},
-    {"id": 62, "name": "松石绿", "hex": "#26A69A", "rgb": [38, 166, 154], "meaning": "绿松石色", "relic": "清代瓷釉", "poem": "松石映碧", "poet": "佚名", "dynasty": "清代", "solar_term": "清明", "location": "景德镇", "story": "乾隆松石绿釉"},
-    {"id": 63, "name": "翡翠", "hex": "#00BFA5", "rgb": [0, 191, 165], "meaning": "翡翠宝石", "relic": "翡翠摆件", "poem": "翡翠衾寒谁与共", "poet": "白居易", "dynasty": "清代", "solar_term": "夏至", "location": "昆明", "story": "云南翡翠文化"},
-    {"id": 64, "name": "湖蓝", "hex": "#0288D1", "rgb": [2, 136, 209], "meaning": "湖水之蓝", "relic": "清代瓷釉", "poem": "湖光山色", "poet": "苏轼", "dynasty": "清代", "solar_term": "大暑", "location": "景德镇", "story": "清代蓝釉品种"},
-    {"id": 65, "name": "宝石蓝", "hex": "#1976D2", "rgb": [25, 118, 210], "meaning": "蓝宝石色", "relic": "珐琅器", "poem": "蓝田日暖玉生烟", "poet": "李商隐", "dynasty": "清代", "solar_term": "夏至", "location": "北京", "story": "景泰蓝主色"},
-    {"id": 66, "name": "靛蓝", "hex": "#283593", "rgb": [40, 53, 147], "meaning": "蓝草染成", "relic": "蓝印花布", "poem": "青取之于蓝", "poet": "荀子", "dynasty": "明代", "solar_term": "小满", "location": "南通", "story": "南通蓝印花布非遗"},
-    {"id": 67, "name": "藏青", "hex": "#1A237E", "rgb": [26, 35, 126], "meaning": "西藏僧袍色", "relic": "藏传佛教服饰", "poem": "青稞酒", "poet": "民歌", "dynasty": "历代", "solar_term": "立秋", "location": "西藏", "story": "藏族传统服饰色"},
-    {"id": 68, "name": "宝蓝", "hex": "#0D47A1", "rgb": [13, 71, 161], "meaning": "贵重蓝宝石", "relic": "清代朝珠", "poem": "宝蓝生辉", "poet": "佚名", "dynasty": "清代", "solar_term": "秋分", "location": "北京", "story": "朝珠宝石配色"},
-    {"id": 69, "name": "妃红", "hex": "#E91E63", "rgb": [233, 30, 99], "meaning": "妃子胭脂红", "relic": "唐代化妆", "poem": "妃子笑", "poet": "杜牧", "dynasty": "唐代", "solar_term": "夏至", "location": "长安", "story": "唐代仕女妆色"},
-    {"id": 70, "name": "石榴红", "hex": "#F44336", "rgb": [244, 67, 54], "meaning": "石榴果实色", "relic": "明代瓷器", "poem": "石榴花开", "poet": "韩愈", "dynasty": "明代", "solar_term": "端午", "location": "景德镇", "story": "釉里红典型色"},
-    {"id": 71, "name": "海棠", "hex": "#E57373", "rgb": [229, 115, 115], "meaning": "海棠花色", "relic": "清代瓷器", "poem": "海棠不惜胭脂色", "poet": "陈与义", "dynasty": "清代", "solar_term": "春分", "location": "景德镇", "story": "粉彩海棠红"},
-    {"id": 72, "name": "绛紫", "hex": "#6A1B9A", "rgb": [106, 27, 154], "meaning": "深紫红色", "relic": "汉代织锦", "poem": "绛紫罗襦", "poet": "汉乐府", "dynasty": "汉代", "solar_term": "寒露", "location": "长沙", "story": "马王堆织锦"},
-    {"id": 73, "name": "葡萄紫", "hex": "#7B1FA2", "rgb": [123, 31, 162], "meaning": "葡萄皮紫", "relic": "唐代服饰", "poem": "葡萄美酒夜光杯", "poet": "王翰", "dynasty": "唐代", "solar_term": "立秋", "location": "长安", "story": "唐代流行紫衫"},
-    {"id": 74, "name": "茄紫", "hex": "#512DA8", "rgb": [81, 45, 168], "meaning": "茄子之紫", "relic": "宋代服饰", "poem": "紫茄", "poet": "陆游", "dynasty": "宋代", "solar_term": "处暑", "location": "开封", "story": "宋代紫服"},
-    {"id": 75, "name": "青莲", "hex": "#5E35B1", "rgb": [94, 53, 177], "meaning": "青莲色", "relic": "佛教造像", "poem": "青莲居士", "poet": "李白", "dynasty": "唐代", "solar_term": "清明", "location": "敦煌", "story": "佛教壁画常用色"},
-    {"id": 76, "name": "莲青", "hex": "#7E57C2", "rgb": [126, 87, 194], "meaning": "莲蓬青紫", "relic": "清代服饰", "poem": "莲叶何田田", "poet": "汉乐府", "dynasty": "清代", "solar_term": "大暑", "location": "苏州", "story": "江南染坊莲青"},
-    {"id": 77, "name": "鼠灰", "hex": "#9E9E9E", "rgb": [158, 158, 158], "meaning": "老鼠毛灰", "relic": "明代服饰", "poem": "鼠蹊", "poet": "庄子", "dynasty": "明代", "solar_term": "霜降", "location": "南京", "story": "明代朴素服饰色"},
-    {"id": 78, "name": "银灰", "hex": "#BDBDBD", "rgb": [189, 189, 189], "meaning": "白银氧化色", "relic": "银器", "poem": "银烛秋光", "poet": "杜牧", "dynasty": "唐代", "solar_term": "中秋", "location": "长安", "story": "唐代银器色泽"},
-    {"id": 79, "name": "蟹青", "hex": "#78909C", "rgb": [120, 144, 156], "meaning": "蟹壳青灰", "relic": "宋代瓷釉", "poem": "蟹青霜重", "poet": "苏轼", "dynasty": "宋代", "solar_term": "寒露", "location": "龙泉", "story": "龙泉窑青釉变体"},
-    {"id": 80, "name": "鸦青", "hex": "#455A64", "rgb": [69, 90, 100], "meaning": "乌鸦青灰", "relic": "元代服饰", "poem": "鸦青", "poet": "元曲", "dynasty": "元代", "solar_term": "立冬", "location": "大都", "story": "元代纸币色"},
-    {"id": 81, "name": "米黄", "hex": "#FFF8E1", "rgb": [255, 248, 225], "meaning": "稻米之色", "relic": "宋代纸张", "poem": "米黄纸", "poet": "沈括", "dynasty": "宋代", "solar_term": "秋分", "location": "宣城", "story": "宣纸本色"},
-    {"id": 82, "name": "杏仁", "hex": "#FFE0B2", "rgb": [255, 224, 178], "meaning": "杏仁果色", "relic": "清代瓷器", "poem": "杏仁酪", "poet": "袁枚", "dynasty": "清代", "solar_term": "惊蛰", "location": "景德镇", "story": "康熙黄釉品种"},
-    {"id": 83, "name": "蜜色", "hex": "#FFECB3", "rgb": [255, 236, 179], "meaning": "蜂蜜之色", "relic": "宋代丝绸", "poem": "蜜蜡黄", "poet": "陆游", "dynasty": "宋代", "solar_term": "芒种", "location": "杭州", "story": "宋代宫廷丝绸"},
-    {"id": 84, "name": "栗色", "hex": "#8D6E63", "rgb": [141, 110, 99], "meaning": "栗子壳色", "relic": "明代家具", "poem": "栗壳色", "poet": "佚名", "dynasty": "明代", "solar_term": "霜降", "location": "苏州", "story": "明式家具配色"},
-    {"id": 85, "name": "檀木", "hex": "#6D4C41", "rgb": [109, 76, 65], "meaning": "紫檀木色", "relic": "明清家具", "poem": "檀香木", "poet": "李时珍", "dynasty": "明代", "solar_term": "秋分", "location": "北京", "story": "紫檀家具"},
-    {"id": 86, "name": "驼色", "hex": "#A1887F", "rgb": [161, 136, 127], "meaning": "骆驼毛色", "relic": "蒙古服饰", "poem": "驼铃声响", "poet": "民歌", "dynasty": "元代", "solar_term": "寒露", "location": "内蒙古", "story": "草原服饰常用色"},
-    {"id": 87, "name": "咖啡", "hex": "#5D4037", "rgb": [93, 64, 55], "meaning": "咖啡豆色", "relic": "清代瓷器", "poem": "咖啡色釉", "poet": "唐英", "dynasty": "清代", "solar_term": "大雪", "location": "景德镇", "story": "窑变釉色"},
-    {"id": 88, "name": "茶褐", "hex": "#4E342E", "rgb": [78, 52, 46], "meaning": "浓茶之色", "relic": "建盏", "poem": "茶色如金", "poet": "陆羽", "dynasty": "宋代", "solar_term": "白露", "location": "建阳", "story": "建盏窑变釉"},
-    {"id": 89, "name": "琥珀黄", "hex": "#FFB300", "rgb": [255, 179, 0], "meaning": "琥珀金黄", "relic": "明代琉璃", "poem": "琥珀光", "poet": "李白", "dynasty": "明代", "solar_term": "秋分", "location": "北京", "story": "琉璃瓦釉色"},
-    {"id": 90, "name": "金茶", "hex": "#F9A825", "rgb": [249, 168, 37], "meaning": "金茶色", "relic": "清代龙袍", "poem": "金碧辉煌", "poet": "佚名", "dynasty": "清代", "solar_term": "冬至", "location": "北京", "story": "皇家织锦用色"},
-    {"id": 91, "name": "杏子", "hex": "#FFAB91", "rgb": [255, 171, 145], "meaning": "熟杏之色", "relic": "唐代服饰", "poem": "红杏枝头春意闹", "poet": "宋祁", "dynasty": "唐代", "solar_term": "清明", "location": "长安", "story": "唐代女子服饰"},
-    {"id": 92, "name": "橘黄", "hex": "#FF9800", "rgb": [255, 152, 0], "meaning": "柑橘之色", "relic": "宋代绘画", "poem": "橘黄橙绿", "poet": "苏轼", "dynasty": "宋代", "solar_term": "霜降", "location": "开封", "story": "宋代花鸟画用色"},
-    {"id": 93, "name": "橙红", "hex": "#FF7043", "rgb": [255, 112, 67], "meaning": "橙子红", "relic": "清代瓷器", "poem": "橙红蟹肥", "poet": "曹雪芹", "dynasty": "清代", "solar_term": "中秋", "location": "景德镇", "story": "矾红釉品种"},
-    {"id": 94, "name": "朱砂", "hex": "#E53935", "rgb": [229, 57, 53], "meaning": "朱砂矿色", "relic": "甲骨文", "poem": "朱砂点额", "poet": "佚名", "dynasty": "商代", "solar_term": "夏至", "location": "安阳", "story": "甲骨刻辞涂朱"},
-    {"id": 95, "name": "嫣红", "hex": "#EC407A", "rgb": [236, 64, 122], "meaning": "娇艳之红", "relic": "清代旗袍", "poem": "姹紫嫣红", "poet": "汤显祖", "dynasty": "清代", "solar_term": "春分", "location": "苏州", "story": "苏绣配色"},
-    {"id": 96, "name": "茜色", "hex": "#D81B60", "rgb": [216, 27, 96], "meaning": "茜草染红", "relic": "汉代服饰", "poem": "茜裙", "poet": "诗经", "dynasty": "汉代", "solar_term": "立夏", "location": "长安", "story": "茜草是最早红色染料"},
-    {"id": 97, "name": "绛红", "hex": "#B71C1C", "rgb": [183, 28, 28], "meaning": "深绛红色", "relic": "汉代漆器", "poem": "绛唇", "poet": "曹植", "dynasty": "汉代", "solar_term": "寒露", "location": "长沙", "story": "楚汉漆器主色"},
-    {"id": 98, "name": "赤金", "hex": "#FFD700", "rgb": [255, 215, 0], "meaning": "纯金之色", "relic": "金器", "poem": "金碧辉煌", "poet": "罗邺", "dynasty": "历代", "solar_term": "冬至", "location": "北京", "story": "皇家金器"},
-    {"id": 99, "name": "泥金", "hex": "#F9A825", "rgb": [249, 168, 37], "meaning": "金粉调色", "relic": "唐代绘画", "poem": "泥金帖子", "poet": "王建", "dynasty": "唐代", "solar_term": "春节", "location": "长安", "story": "唐代金碧山水"},
-    {"id": 100, "name": "鹅黄", "hex": "#FFF59D", "rgb": [255, 245, 157], "meaning": "幼鹅绒毛", "relic": "宋代服饰", "poem": "鹅儿黄似酒", "poet": "苏轼", "dynasty": "宋代", "solar_term": "雨水", "location": "杭州", "story": "宋代春服流行色"},
-    {"id": 101, "name": "槐黄", "hex": "#FDD835", "rgb": [253, 216, 53], "meaning": "槐花之黄", "relic": "明代服饰", "poem": "槐花黄", "poet": "李商隐", "dynasty": "明代", "solar_term": "小满", "location": "北京", "story": "科举放榜时槐花黄"},
-    {"id": 102, "name": "藤黄", "hex": "#FFEB3B", "rgb": [255, 235, 59], "meaning": "国画藤黄", "relic": "国画", "poem": "藤黄入画", "poet": "郭熙", "dynasty": "宋代", "solar_term": "立春", "location": "开封", "story": "国画必备颜料"},
-    {"id": 103, "name": "柠檬", "hex": "#F9A825", "rgb": [249, 168, 37], "meaning": "柠檬果色", "relic": "清代瓷器", "poem": "柠檬黄釉", "poet": "唐英", "dynasty": "清代", "solar_term": "夏至", "location": "景德镇", "story": "雍正柠檬黄"},
-    {"id": 104, "name": "姜黄", "hex": "#FFB74D", "rgb": [255, 183, 77], "meaning": "生姜黄", "relic": "染织", "poem": "姜黄衫子薄罗裳", "poet": "佚名", "dynasty": "明代", "solar_term": "寒露", "location": "江南", "story": "姜黄可作染料"},
-    {"id": 105, "name": "淡黄", "hex": "#FFF176", "rgb": [255, 241, 118], "meaning": "浅黄色", "relic": "宋代丝绸", "poem": "淡黄柳", "poet": "姜夔", "dynasty": "宋代", "solar_term": "清明", "location": "杭州", "story": "宋代淡雅服饰"},
-    {"id": 106, "name": "柳黄", "hex": "#C0CA33", "rgb": [192, 202, 51], "meaning": "柳芽初黄", "relic": "宋代绘画", "poem": "柳色黄金嫩", "poet": "李白", "dynasty": "宋代", "solar_term": "惊蛰", "location": "开封", "story": "春景画用色"},
-    {"id": 107, "name": "松花", "hex": "#9E9D24", "rgb": [158, 157, 36], "meaning": "松花粉色", "relic": "清代御墨", "poem": "松花酿酒", "poet": "张可久", "dynasty": "清代", "solar_term": "谷雨", "location": "徽州", "story": "御制松花石砚"},
-    {"id": 108, "name": "芽绿", "hex": "#8BC34A", "rgb": [139, 195, 74], "meaning": "嫩芽之绿", "relic": "宋代绘画", "poem": "草色遥看近却无", "poet": "韩愈", "dynasty": "宋代", "solar_term": "雨水", "location": "开封", "story": "早春画意"},
-    {"id": 109, "name": "葱绿", "hex": "#7CB342", "rgb": [124, 179, 66], "meaning": "葱叶之绿", "relic": "明代瓷器", "poem": "葱绿初熟", "poet": "佚名", "dynasty": "明代", "solar_term": "立夏", "location": "景德镇", "story": "明代绿釉"},
-    {"id": 110, "name": "蕉绿", "hex": "#558B2F", "rgb": [85, 139, 47], "meaning": "芭蕉叶绿", "relic": "清代绘画", "poem": "红了樱桃绿了芭蕉", "poet": "蒋捷", "dynasty": "清代", "solar_term": "夏至", "location": "苏州", "story": "江南园林配色"},
-    {"id": 111, "name": "苔绿", "hex": "#689F38", "rgb": [104, 159, 56], "meaning": "青苔之绿", "relic": "宋代绘画", "poem": "苔痕上阶绿", "poet": "刘禹锡", "dynasty": "宋代", "solar_term": "芒种", "location": "开封", "story": "山水画苔点"},
-    {"id": 112, "name": "石绿", "hex": "#33691E", "rgb": [51, 105, 30], "meaning": "孔雀石绿", "relic": "敦煌壁画", "poem": "石绿染山", "poet": "王维", "dynasty": "唐代", "solar_term": "清明", "location": "敦煌", "story": "青绿山水主色"},
-    {"id": 113, "name": "铜绿", "hex": "#43A047", "rgb": [67, 160, 71], "meaning": "铜锈之绿", "relic": "青铜器", "poem": "铜雀春深", "poet": "杜牧", "dynasty": "商代", "solar_term": "春分", "location": "安阳", "story": "青铜器 patina"},
-    {"id": 114, "name": "水绿", "hex": "#81C784", "rgb": [129, 199, 132], "meaning": "清水泛绿", "relic": "宋代瓷器", "poem": "春来江水绿如蓝", "poet": "白居易", "dynasty": "宋代", "solar_term": "惊蛰", "location": "龙泉", "story": "龙泉青瓷釉色"},
-    {"id": 115, "name": "碧色", "hex": "#26A69A", "rgb": [38, 166, 154], "meaning": "碧玉之色", "relic": "玉器", "poem": "碧水东流", "poet": "李白", "dynasty": "历代", "solar_term": "夏至", "location": "和田", "story": "碧玉文化"},
-    {"id": 116, "name": "靛蓝", "hex": "#303F9F", "rgb": [48, 63, 159], "meaning": "靛青深蓝", "relic": "蓝印花布", "poem": "青出于蓝", "poet": "荀子", "dynasty": "明代", "solar_term": "小满", "location": "南通", "story": "蓝染工艺"},
-    {"id": 117, "name": "群青", "hex": "#3949AB", "rgb": [57, 73, 171], "meaning": "天然群青", "relic": "敦煌壁画", "poem": "群青染天", "poet": "佚名", "dynasty": "唐代", "solar_term": "立秋", "location": "敦煌", "story": "青金石研磨颜料"},
-    {"id": 118, "name": "霁蓝", "hex": "#1E88E5", "rgb": [30, 136, 229], "meaning": "雨霁天蓝", "relic": "明代祭蓝", "poem": "霁色初开", "poet": "王勃", "dynasty": "明代", "solar_term": "清明", "location": "景德镇", "story": "宣德祭蓝釉"},
-    {"id": 119, "name": "钴蓝", "hex": "#1565C0", "rgb": [21, 101, 192], "meaning": "钴料之蓝", "relic": "元青花", "poem": "钴蓝生辉", "poet": "佚名", "dynasty": "元代", "solar_term": "夏至", "location": "景德镇", "story": "青花瓷钴料"},
-    {"id": 120, "name": "孔雀蓝", "hex": "#00838F", "rgb": [0, 131, 143], "meaning": "孔雀蓝", "relic": "珐华器", "poem": "孔雀开屏", "poet": "民歌", "dynasty": "明代", "solar_term": "立夏", "location": "景德镇", "story": "珐华孔雀蓝"},
-    {"id": 121, "name": "月白", "hex": "#E1F5FE", "rgb": [225, 245, 254], "meaning": "月夜白", "relic": "宋代瓷器", "poem": "月白风清", "poet": "苏轼", "dynasty": "宋代", "solar_term": "中秋", "location": "景德镇", "story": "影青瓷月白釉"},
-    {"id": 122, "name": "鱼白", "hex": "#E3F2FD", "rgb": [227, 242, 253], "meaning": "鱼肚白", "relic": "宋代绘画", "poem": "鱼白东方", "poet": "佚名", "dynasty": "宋代", "solar_term": "春分", "location": "开封", "story": "山水画天际"},
-    {"id": 123, "name": "雪白", "hex": "#FAFAFA", "rgb": [250, 250, 250], "meaning": "白雪之色", "relic": "定窑白瓷", "poem": "雪满山中", "poet": "高启", "dynasty": "宋代", "solar_term": "大雪", "location": "定窑", "story": "定窑白瓷"},
-    {"id": 124, "name": "牙白", "hex": "#FFFDE7", "rgb": [255, 253, 231], "meaning": "象牙白", "relic": "德化瓷", "poem": "牙白如玉", "poet": "佚名", "dynasty": "明代", "solar_term": "小寒", "location": "德化", "story": "德化象牙白"},
-    {"id": 125, "name": "粉白", "hex": "#FFF8E1", "rgb": [255, 248, 225], "meaning": "粉墙之白", "relic": "徽派建筑", "poem": "粉墙黛瓦", "poet": "佚名", "dynasty": "明代", "solar_term": "春分", "location": "徽州", "story": "江南建筑配色"},
-    {"id": 126, "name": "莲白", "hex": "#FCE4EC", "rgb": [252, 228, 236], "meaning": "莲花白", "relic": "宋代服饰", "poem": "莲白如玉", "poet": "周邦彦", "dynasty": "宋代", "solar_term": "大暑", "location": "杭州", "story": "宋代淡雅服饰"},
-    {"id": 127, "name": "米白", "hex": "#FFF8E7", "rgb": [255, 248, 231], "meaning": "米粒之白", "relic": "宣纸", "poem": "米白纸", "poet": "沈括", "dynasty": "宋代", "solar_term": "秋分", "location": "宣城", "story": "宣纸本色"},
-    {"id": 128, "name": "霜白", "hex": "#F5F5F5", "rgb": [245, 245, 245], "meaning": "秋霜白", "relic": "宋代白瓷", "poem": "白露为霜", "poet": "诗经", "dynasty": "宋代", "solar_term": "霜降", "location": "定窑", "story": "定窑霜白釉"},
-    {"id": 129, "name": "鸦青", "hex": "#263238", "rgb": [38, 50, 56], "meaning": "深鸦青", "relic": "漆器", "poem": "鸦青万点", "poet": "秦观", "dynasty": "宋代", "solar_term": "立冬", "location": "福州", "story": "脱胎漆器"},
-    {"id": 130, "name": "墨黑", "hex": "#212121", "rgb": [33, 33, 33], "meaning": "墨汁之黑", "relic": "徽墨", "poem": "墨分五色", "poet": "张彦远", "dynasty": "唐代", "solar_term": "大雪", "location": "徽州", "story": "墨之浓淡"},
-    {"id": 131, "name": "玄黑", "hex": "#1B1B1B", "rgb": [27, 27, 27], "meaning": "玄色之黑", "relic": "周代礼器", "poem": "玄黄", "poet": "易经", "dynasty": "周代", "solar_term": "冬至", "location": "洛阳", "story": "周礼玄端"},
-    {"id": 132, "name": "乌黑", "hex": "#171717", "rgb": [23, 23, 23], "meaning": "乌鸦之黑", "relic": "建盏", "poem": "乌金釉", "poet": "陆羽", "dynasty": "宋代", "solar_term": "冬至", "location": "建阳", "story": "建窑乌金盏"},
-    {"id": 133, "name": "漆黑", "hex": "#0D0D0D", "rgb": [13, 13, 13], "meaning": "漆器之黑", "relic": "楚式漆器", "poem": "漆黑一团", "poet": "佚名", "dynasty": "战国", "solar_term": "大雪", "location": "荆州", "story": "楚漆器黑漆"},
-    {"id": 134, "name": "酱色", "hex": "#5D4037", "rgb": [93, 64, 55], "meaning": "酱汁之色", "relic": "紫砂壶", "poem": "酱釉", "poet": "佚名", "dynasty": "明代", "solar_term": "秋分", "location": "宜兴", "story": "紫砂壶烧结色"},
-    {"id": 135, "name": "褐色", "hex": "#6D4C41", "rgb": [109, 76, 65], "meaning": "褐色", "relic": "明代家具", "poem": "褐衣", "poet": "杜甫", "dynasty": "明代", "solar_term": "霜降", "location": "苏州", "story": "明式家具配色"},
-    {"id": 136, "name": "棕色", "hex": "#795548", "rgb": [121, 85, 72], "meaning": "棕榈之色", "relic": "竹编", "poem": "棕毛", "poet": "佚名", "dynasty": "宋代", "solar_term": "寒露", "location": "浙江", "story": "棕编工艺"},
-    {"id": 137, "name": "古铜", "hex": "#5D4037", "rgb": [93, 64, 55], "meaning": "青铜古色", "relic": "青铜器", "poem": "古铜色", "poet": "佚名", "dynasty": "商代", "solar_term": "秋分", "location": "安阳", "story": "青铜器锈色"},
-    {"id": 138, "name": "铁锈", "hex": "#4E342E", "rgb": [78, 52, 46], "meaning": "铁锈之色", "relic": "铁器", "poem": "铁马冰河", "poet": "陆游", "dynasty": "历代", "solar_term": "大雪", "location": "各地", "story": "铁器氧化色"},
-    {"id": 139, "name": "檀褐", "hex": "#6D4C41", "rgb": [109, 76, 65], "meaning": "檀木褐", "relic": "佛造像", "poem": "檀褐", "poet": "佚名", "dynasty": "唐代", "solar_term": "秋分", "location": "敦煌", "story": "壁画人物肤色"},
-    {"id": 140, "name": "黎色", "hex": "#5D4037", "rgb": [93, 64, 55], "meaning": "黎民服色", "relic": "汉代服饰", "poem": "黎民", "poet": "孟子", "dynasty": "汉代", "solar_term": "霜降", "location": "长安", "story": "百姓服饰色"},
-    {"id": 141, "name": "银白", "hex": "#ECEFF1", "rgb": [236, 239, 241], "meaning": "白银之色", "relic": "银器", "poem": "银汉迢迢", "poet": "秦观", "dynasty": "唐代", "solar_term": "七夕", "location": "长安", "story": "唐代银器"},
-    {"id": 142, "name": "铅白", "hex": "#CFD8DC", "rgb": [207, 216, 220], "meaning": "铅粉之白", "relic": "唐代化妆", "poem": "铅华不可弃", "poet": "佚名", "dynasty": "唐代", "solar_term": "春分", "location": "长安", "story": "古代化妆品"},
-    {"id": 143, "name": "素白", "hex": "#FAFAFA", "rgb": [250, 250, 250], "meaning": "素色之白", "relic": "素纱襌衣", "poem": "素衣", "poet": "诗经", "dynasty": "汉代", "solar_term": "立春", "location": "长沙", "story": "马王堆素纱"},
-    {"id": 144, "name": "霜色", "hex": "#ECEFF1", "rgb": [236, 239, 241], "meaning": "晨霜", "relic": "宋代白瓷", "poem": "霜色满庭", "poet": "柳永", "dynasty": "宋代", "solar_term": "霜降", "location": "定窑", "story": "定窑白釉"},
-    {"id": 145, "name": "珍珠", "hex": "#F5F5F5", "rgb": [245, 245, 245], "meaning": "珍珠光泽", "relic": "珍珠饰品", "poem": "珍珠帘", "poet": "李煜", "dynasty": "唐代", "solar_term": "中秋", "location": "合浦", "story": "南珠文化"},
-    {"id": 146, "name": "云母", "hex": "#F5F5F5", "rgb": [245, 245, 245], "meaning": "云母光泽", "relic": "唐代绘画", "poem": "云母屏风", "poet": "李商隐", "dynasty": "唐代", "solar_term": "中秋", "location": "长安", "story": "唐代屏风用材"},
-    {"id": 147, "name": "砗磲", "hex": "#FFF8E1", "rgb": [255, 248, 225], "meaning": "砗磲贝色", "relic": "佛教七宝", "poem": "砗磲", "poet": "佛经", "dynasty": "历代", "solar_term": "立夏", "location": "南海", "story": "佛教七宝之一"},
-    {"id": 148, "name": "玛瑙", "hex": "#FFCCBC", "rgb": [255, 204, 188], "meaning": "玛瑙红", "relic": "玛瑙杯", "poem": "葡萄美酒夜光杯", "poet": "王翰", "dynasty": "唐代", "solar_term": "立秋", "location": "西安", "story": "镶金兽首玛瑙杯"},
-    {"id": 149, "name": "珊瑚", "hex": "#FF8A80", "rgb": [255, 138, 128], "meaning": "珊瑚红", "relic": "珊瑚饰品", "poem": "珊瑚枝", "poet": "李商隐", "dynasty": "清代", "solar_term": "夏至", "location": "北京", "story": "清代朝珠用珊瑚"},
-    {"id": 150, "name": "琥珀色", "hex": "#FFAB40", "rgb": [255, 171, 64], "meaning": "琥珀宝石", "relic": "琥珀饰品", "poem": "琥珀初成", "poet": "李商隐", "dynasty": "汉代", "solar_term": "秋分", "location": "西安", "story": "汉代琥珀文物"}
+    {
+      "id": 1,
+      "name": "天青",
+      "hex": "#4A5568",
+      "rgb": [
+        74,
+        85,
+        104
+      ],
+      "meaning": "汝窑之色，雨后初晴",
+      "relic": "汝窑天青釉碗",
+      "poem": "雨过天青云破处，这般颜色作将来",
+      "poet": "宋徽宗",
+      "dynasty": "宋代",
+      "solar_term": "清明",
+      "location": "河南汝州",
+      "story": "宋徽宗梦中见雨后天色，命汝窑烧制"
+    },
+    {
+      "id": 2,
+      "name": "天水碧",
+      "hex": "#89CFF0",
+      "rgb": [
+        137,
+        207,
+        240
+      ],
+      "meaning": "南唐宫女染衣之色",
+      "relic": "南唐服饰",
+      "poem": "天水碧，染就一江秋色",
+      "poet": "周密",
+      "dynasty": "南唐",
+      "solar_term": "立秋",
+      "location": "南京",
+      "story": "南唐宫女于庭院染衣，露水浸染成此色"
+    },
+    {
+      "id": 3,
+      "name": "天蓝",
+      "hex": "#4FC3F7",
+      "rgb": [
+        79,
+        195,
+        247
+      ],
+      "meaning": "晴朗天空之色",
+      "relic": "清代瓷釉",
+      "poem": "天蓝如水月如霜",
+      "poet": "李白",
+      "dynasty": "清代",
+      "solar_term": "夏至",
+      "location": "景德镇",
+      "story": "清代御窑创烧之天蓝釉"
+    },
+    {
+      "id": 4,
+      "name": "天缥",
+      "hex": "#B8E0E8",
+      "rgb": [
+        184,
+        224,
+        232
+      ],
+      "meaning": "薄云笼罩的天空色",
+      "relic": "宋代绢帛",
+      "poem": "缥缈云间鹤",
+      "poet": "白居易",
+      "dynasty": "宋代",
+      "solar_term": "谷雨",
+      "location": "苏州",
+      "story": "丝织品染色工艺代表色"
+    },
+    {
+      "id": 5,
+      "name": "月白",
+      "hex": "#E8F4F8",
+      "rgb": [
+        232,
+        244,
+        248
+      ],
+      "meaning": "月夜之色，清冷雅致",
+      "relic": "宋瓷影青",
+      "poem": "月白风清，如此良夜何",
+      "poet": "苏轼",
+      "dynasty": "宋代",
+      "solar_term": "中秋",
+      "location": "景德镇",
+      "story": "影青釉瓷之典型色泽"
+    },
+    {
+      "id": 6,
+      "name": "石青",
+      "hex": "#1565C0",
+      "rgb": [
+        21,
+        101,
+        192
+      ],
+      "meaning": "矿物颜料，敦煌壁画主色",
+      "relic": "敦煌壁画",
+      "poem": "石青染就春山色",
+      "poet": "王维",
+      "dynasty": "唐代",
+      "solar_term": "惊蛰",
+      "location": "敦煌",
+      "story": "青金石研磨而成的贵重颜料"
+    },
+    {
+      "id": 7,
+      "name": "黛蓝",
+      "hex": "#37474F",
+      "rgb": [
+        55,
+        71,
+        79
+      ],
+      "meaning": "深蓝近黑，沉稳大气",
+      "relic": "明代官服",
+      "poem": "黛色参天二千尺",
+      "poet": "杜甫",
+      "dynasty": "明代",
+      "solar_term": "大雪",
+      "location": "北京",
+      "story": "明代官服用色等级"
+    },
+    {
+      "id": 8,
+      "name": "靛青",
+      "hex": "#1E88E5",
+      "rgb": [
+        30,
+        136,
+        229
+      ],
+      "meaning": "蓝草染成，传统染料",
+      "relic": "蓝印花布",
+      "poem": "青出于蓝而胜于蓝",
+      "poet": "荀子",
+      "dynasty": "明代",
+      "solar_term": "小满",
+      "location": "南通",
+      "story": "靛蓝染艺传承千年"
+    },
+    {
+      "id": 9,
+      "name": "朱红",
+      "hex": "#C62828",
+      "rgb": [
+        198,
+        40,
+        40
+      ],
+      "meaning": "故宫宫墙之色",
+      "relic": "故宫红墙",
+      "poem": "朱门酒肉臭",
+      "poet": "杜甫",
+      "dynasty": "明代",
+      "solar_term": "冬至",
+      "location": "北京",
+      "story": "故宫建筑主色，象征皇权"
+    },
+    {
+      "id": 10,
+      "name": "中国红",
+      "hex": "#DC143C",
+      "rgb": [
+        220,
+        20,
+        60
+      ],
+      "meaning": "喜庆吉祥，民族象征",
+      "relic": "春节对联",
+      "poem": "红妆素裹，分外妖娆",
+      "poet": "毛泽东",
+      "dynasty": "历代",
+      "solar_term": "春节",
+      "location": "全国各地",
+      "story": "中华民族最具代表性的颜色"
+    },
+    {
+      "id": 11,
+      "name": "绛红",
+      "hex": "#8B0000",
+      "rgb": [
+        139,
+        0,
+        0
+      ],
+      "meaning": "深红庄重",
+      "relic": "汉代漆器",
+      "poem": "绛唇珠袖两寂寞",
+      "poet": "杜甫",
+      "dynasty": "汉代",
+      "solar_term": "寒露",
+      "location": "长沙",
+      "story": "马王堆漆器典型用色"
+    },
+    {
+      "id": 12,
+      "name": "胭脂",
+      "hex": "#9D2933",
+      "rgb": [
+        157,
+        41,
+        51
+      ],
+      "meaning": "女子唇色，妩媚动人",
+      "relic": "唐代仕女图",
+      "poem": "胭脂泪，相留醉",
+      "poet": "李煜",
+      "dynasty": "唐代",
+      "solar_term": "春分",
+      "location": "长安",
+      "story": "源自红蓝花提取的化妆品"
+    },
+    {
+      "id": 13,
+      "name": "杏黄",
+      "hex": "#FFA726",
+      "rgb": [
+        255,
+        167,
+        38
+      ],
+      "meaning": "帝王专用，龙袍之色",
+      "relic": "清代龙袍",
+      "poem": "杏花春雨江南",
+      "poet": "虞集",
+      "dynasty": "清代",
+      "solar_term": "清明",
+      "location": "北京",
+      "story": "清代皇帝朝服专用色"
+    },
+    {
+      "id": 14,
+      "name": "藤黄",
+      "hex": "#FFD54F",
+      "rgb": [
+        255,
+        213,
+        79
+      ],
+      "meaning": "国画颜料，藤树树脂",
+      "relic": "敦煌壁画",
+      "poem": "藤黄柳绿报春来",
+      "poet": "佚名",
+      "dynasty": "唐代",
+      "solar_term": "立春",
+      "location": "敦煌",
+      "story": "海藤树树脂制成的国画颜料"
+    },
+    {
+      "id": 15,
+      "name": "鹅黄",
+      "hex": "#FFF176",
+      "rgb": [
+        255,
+        241,
+        118
+      ],
+      "meaning": "初生鹅雏之色",
+      "relic": "宋代服饰",
+      "poem": "鹅黄杨柳垂金线",
+      "poet": "欧阳修",
+      "dynasty": "宋代",
+      "solar_term": "雨水",
+      "location": "开封",
+      "story": "宋代流行服饰配色"
+    },
+    {
+      "id": 16,
+      "name": "竹青",
+      "hex": "#2E7D32",
+      "rgb": [
+        46,
+        125,
+        50
+      ],
+      "meaning": "竹子表皮之色",
+      "relic": "竹编工艺",
+      "poem": "竹色溪下绿",
+      "poet": "李白",
+      "dynasty": "宋代",
+      "solar_term": "立夏",
+      "location": "安吉",
+      "story": "竹器天然色泽"
+    },
+    {
+      "id": 17,
+      "name": "苍绿",
+      "hex": "#1B5E20",
+      "rgb": [
+        27,
+        94,
+        32
+      ],
+      "meaning": "深绿苍茫",
+      "relic": "青绿山水画",
+      "poem": "千里江山苍翠中",
+      "poet": "王希孟",
+      "dynasty": "宋代",
+      "solar_term": "芒种",
+      "location": "开封",
+      "story": "千里江山图主色调"
+    },
+    {
+      "id": 18,
+      "name": "碧绿",
+      "hex": "#43A047",
+      "rgb": [
+        67,
+        160,
+        71
+      ],
+      "meaning": "翡翠碧玉之色",
+      "relic": "翡翠玉佩",
+      "poem": "碧玉妆成一树高",
+      "poet": "贺知章",
+      "dynasty": "唐代",
+      "solar_term": "春分",
+      "location": "和田",
+      "story": "和田玉之翠色"
+    },
+    {
+      "id": 19,
+      "name": "青瓷",
+      "hex": "#66BB6A",
+      "rgb": [
+        102,
+        187,
+        106
+      ],
+      "meaning": "越窑青瓷釉色",
+      "relic": "越窑青瓷",
+      "poem": "九秋风露越窑开",
+      "poet": "陆龟蒙",
+      "dynasty": "唐代",
+      "solar_term": "霜降",
+      "location": "浙江",
+      "story": "秘色瓷之源头"
+    },
+    {
+      "id": 20,
+      "name": "柳绿",
+      "hex": "#81C784",
+      "rgb": [
+        129,
+        199,
+        132
+      ],
+      "meaning": "柳叶新绿",
+      "relic": "宋代绘画",
+      "poem": "两个黄鹂鸣翠柳",
+      "poet": "杜甫",
+      "dynasty": "宋代",
+      "solar_term": "惊蛰",
+      "location": "成都",
+      "story": "春意盎然之代表色"
+    },
+    {
+      "id": 21,
+      "name": "玄色",
+      "hex": "#212121",
+      "rgb": [
+        33,
+        33,
+        33
+      ],
+      "meaning": "天未明之色，神秘深邃",
+      "relic": "周代礼器",
+      "poem": "玄之又玄，众妙之门",
+      "poet": "老子",
+      "dynasty": "周代",
+      "solar_term": "冬至",
+      "location": "洛阳",
+      "story": "古代最高礼仪用色"
+    },
+    {
+      "id": 22,
+      "name": "皂色",
+      "hex": "#1A237E",
+      "rgb": [
+        26,
+        35,
+        126
+      ],
+      "meaning": "皂角染成之黑",
+      "relic": "秦代服饰",
+      "poem": "皂隶之衣",
+      "poet": "礼记",
+      "dynasty": "秦代",
+      "solar_term": "大雪",
+      "location": "咸阳",
+      "story": "古代低级官吏服色"
+    },
+    {
+      "id": 23,
+      "name": "雪青",
+      "hex": "#B39DDB",
+      "rgb": [
+        179,
+        157,
+        219
+      ],
+      "meaning": "雪中紫花",
+      "relic": "清代瓷器",
+      "poem": "雪青衫子薄罗裳",
+      "poet": "纳兰性德",
+      "dynasty": "清代",
+      "solar_term": "小雪",
+      "location": "北京",
+      "story": "清代流行服饰色"
+    },
+    {
+      "id": 24,
+      "name": "藕荷",
+      "hex": "#E1BEE7",
+      "rgb": [
+        225,
+        190,
+        231
+      ],
+      "meaning": "莲藕皮色",
+      "relic": "清代旗袍",
+      "poem": "藕花深处",
+      "poet": "李清照",
+      "dynasty": "清代",
+      "solar_term": "大暑",
+      "location": "苏州",
+      "story": "江南染坊经典配色"
+    },
+    {
+      "id": 25,
+      "name": "丁香",
+      "hex": "#9575CD",
+      "rgb": [
+        149,
+        117,
+        205
+      ],
+      "meaning": "丁香花之色",
+      "relic": "清代瓷器",
+      "poem": "丁香空结雨中愁",
+      "poet": "李璟",
+      "dynasty": "清代",
+      "solar_term": "谷雨",
+      "location": "景德镇",
+      "story": "珐琅彩丁香紫釉"
+    },
+    {
+      "id": 26,
+      "name": "紫檀",
+      "hex": "#4E342E",
+      "rgb": [
+        78,
+        52,
+        46
+      ],
+      "meaning": "紫檀木色",
+      "relic": "明清家具",
+      "poem": "紫檀木匣贮明珠",
+      "poet": "白居易",
+      "dynasty": "明代",
+      "solar_term": "秋分",
+      "location": "北京",
+      "story": "明清宫廷家具主材"
+    },
+    {
+      "id": 27,
+      "name": "檀色",
+      "hex": "#8D6E63",
+      "rgb": [
+        141,
+        110,
+        99
+      ],
+      "meaning": "浅紫褐色",
+      "relic": "宋代绘画",
+      "poem": "檀郎谢女携手去",
+      "poet": "李贺",
+      "dynasty": "宋代",
+      "solar_term": "白露",
+      "location": "开封",
+      "story": "宋代人物画肤色"
+    },
+    {
+      "id": 28,
+      "name": "琥珀",
+      "hex": "#FF8F00",
+      "rgb": [
+        255,
+        143,
+        0
+      ],
+      "meaning": "琥珀宝石色",
+      "relic": "汉代玉器",
+      "poem": "琥珀初成忆旧松",
+      "poet": "李商隐",
+      "dynasty": "汉代",
+      "solar_term": "秋分",
+      "location": "西安",
+      "story": "汉代琥珀饰品"
+    },
+    {
+      "id": 29,
+      "name": "赭石",
+      "hex": "#795548",
+      "rgb": [
+        121,
+        85,
+        72
+      ],
+      "meaning": "矿物颜料",
+      "relic": "敦煌壁画",
+      "poem": "赭山如画",
+      "poet": "刘禹锡",
+      "dynasty": "唐代",
+      "solar_term": "霜降",
+      "location": "敦煌",
+      "story": "国画赭石颜料来源"
+    },
+    {
+      "id": 30,
+      "name": "丹砂",
+      "hex": "#E53935",
+      "rgb": [
+        229,
+        57,
+        53
+      ],
+      "meaning": "朱砂之色",
+      "relic": "道教符箓",
+      "poem": "丹砂点漆",
+      "poet": "葛洪",
+      "dynasty": "晋代",
+      "solar_term": "夏至",
+      "location": "龙虎山",
+      "story": "道教炼丹术重要原料"
+    },
+    {
+      "id": 31,
+      "name": "银朱",
+      "hex": "#D32F2F",
+      "rgb": [
+        211,
+        47,
+        47
+      ],
+      "meaning": "人工炼制朱红",
+      "relic": "明清建筑",
+      "poem": "银朱点额",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "冬至",
+      "location": "北京",
+      "story": "古建筑彩画用色"
+    },
+    {
+      "id": 32,
+      "name": "妃色",
+      "hex": "#F8BBD9",
+      "rgb": [
+        248,
+        187,
+        217
+      ],
+      "meaning": "妃子服饰之色",
+      "relic": "唐代服饰",
+      "poem": "妃子笑",
+      "poet": "杜牧",
+      "dynasty": "唐代",
+      "solar_term": "夏至",
+      "location": "长安",
+      "story": "杨贵妃喜爱的淡粉"
+    },
+    {
+      "id": 33,
+      "name": "桃红",
+      "hex": "#F48FB1",
+      "rgb": [
+        244,
+        143,
+        177
+      ],
+      "meaning": "桃花之色",
+      "relic": "清代瓷器",
+      "poem": "人面桃花相映红",
+      "poet": "崔护",
+      "dynasty": "清代",
+      "solar_term": "春分",
+      "location": "景德镇",
+      "story": "粉彩瓷器典型色"
+    },
+    {
+      "id": 34,
+      "name": "樱草",
+      "hex": "#FFF59D",
+      "rgb": [
+        255,
+        245,
+        157
+      ],
+      "meaning": "樱草花黄",
+      "relic": "宋代织锦",
+      "poem": "樱草初开",
+      "poet": "陆游",
+      "dynasty": "宋代",
+      "solar_term": "雨水",
+      "location": "成都",
+      "story": "蜀锦配色之一"
+    },
+    {
+      "id": 35,
+      "name": "姜黄",
+      "hex": "#F9A825",
+      "rgb": [
+        249,
+        168,
+        37
+      ],
+      "meaning": "生姜之色",
+      "relic": "明代服饰",
+      "poem": "姜黄衫子",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "寒露",
+      "location": "南京",
+      "story": "明代民间流行色"
+    },
+    {
+      "id": 36,
+      "name": "栀子",
+      "hex": "#FFEB3B",
+      "rgb": [
+        255,
+        235,
+        59
+      ],
+      "meaning": "栀子花黄",
+      "relic": "宋代染料",
+      "poem": "栀子比众木",
+      "poet": "杜甫",
+      "dynasty": "宋代",
+      "solar_term": "夏至",
+      "location": "江西",
+      "story": "栀子果实可做黄色染料"
+    },
+    {
+      "id": 37,
+      "name": "秋香",
+      "hex": "#C0CA33",
+      "rgb": [
+        192,
+        202,
+        51
+      ],
+      "meaning": "秋日香色",
+      "relic": "清代瓷器",
+      "poem": "秋香色满庭",
+      "poet": "纳兰性德",
+      "dynasty": "清代",
+      "solar_term": "秋分",
+      "location": "景德镇",
+      "story": "康熙秋香釉"
+    },
+    {
+      "id": 38,
+      "name": "艾绿",
+      "hex": "#7CB342",
+      "rgb": [
+        124,
+        179,
+        66
+      ],
+      "meaning": "艾草之绿",
+      "relic": "端午香囊",
+      "poem": "艾叶青青",
+      "poet": "屈原",
+      "dynasty": "战国",
+      "solar_term": "端午",
+      "location": "湖南",
+      "story": "端午辟邪用艾色"
+    },
+    {
+      "id": 39,
+      "name": "松绿",
+      "hex": "#558B2F",
+      "rgb": [
+        85,
+        139,
+        47
+      ],
+      "meaning": "松针之绿",
+      "relic": "青绿山水",
+      "poem": "青松寒不落",
+      "poet": "杜甫",
+      "dynasty": "宋代",
+      "solar_term": "大雪",
+      "location": "开封",
+      "story": "山水画松树用色"
+    },
+    {
+      "id": 40,
+      "name": "茶绿",
+      "hex": "#689F38",
+      "rgb": [
+        104,
+        159,
+        56
+      ],
+      "meaning": "绿茶汤色",
+      "relic": "茶具",
+      "poem": "茶烟绿绕",
+      "poet": "陆羽",
+      "dynasty": "唐代",
+      "solar_term": "谷雨",
+      "location": "湖州",
+      "story": "茶经记载之茶色"
+    },
+    {
+      "id": 41,
+      "name": "青白",
+      "hex": "#E0F2F1",
+      "rgb": [
+        224,
+        242,
+        241
+      ],
+      "meaning": "青白瓷釉色",
+      "relic": "景德镇青白瓷",
+      "poem": "青白二色",
+      "poet": "蒋祈",
+      "dynasty": "宋代",
+      "solar_term": "白露",
+      "location": "景德镇",
+      "story": "影青瓷别称"
+    },
+    {
+      "id": 42,
+      "name": "象牙",
+      "hex": "#FFF8E1",
+      "rgb": [
+        255,
+        248,
+        225
+      ],
+      "meaning": "象牙之色",
+      "relic": "清代牙雕",
+      "poem": "牙签万轴",
+      "poet": "韩愈",
+      "dynasty": "清代",
+      "solar_term": "大寒",
+      "location": "北京",
+      "story": "宫廷象牙制品"
+    },
+    {
+      "id": 43,
+      "name": "素色",
+      "hex": "#FAFAFA",
+      "rgb": [
+        250,
+        250,
+        250
+      ],
+      "meaning": "未染之白",
+      "relic": "素纱襌衣",
+      "poem": "素衣莫起风尘叹",
+      "poet": "陆游",
+      "dynasty": "汉代",
+      "solar_term": "立春",
+      "location": "长沙",
+      "story": "马王堆素纱襌衣仅49克"
+    },
+    {
+      "id": 44,
+      "name": "霜色",
+      "hex": "#ECEFF1",
+      "rgb": [
+        236,
+        239,
+        241
+      ],
+      "meaning": "晨霜之色",
+      "relic": "宋代白瓷",
+      "poem": "霜禽欲下先偷眼",
+      "poet": "林逋",
+      "dynasty": "宋代",
+      "solar_term": "霜降",
+      "location": "定窑",
+      "story": "定窑白瓷釉色"
+    },
+    {
+      "id": 45,
+      "name": "玉色",
+      "hex": "#E8EAF6",
+      "rgb": [
+        232,
+        234,
+        246
+      ],
+      "meaning": "和田白玉",
+      "relic": "和田玉器",
+      "poem": "玉在山而木润",
+      "poet": "荀子",
+      "dynasty": "历代",
+      "solar_term": "秋分",
+      "location": "和田",
+      "story": "君子比德于玉"
+    },
+    {
+      "id": 46,
+      "name": "霜白",
+      "hex": "#F5F5F5",
+      "rgb": [
+        245,
+        245,
+        245
+      ],
+      "meaning": "霜后之白",
+      "relic": "德化白瓷",
+      "poem": "白露为霜",
+      "poet": "诗经",
+      "dynasty": "明代",
+      "solar_term": "霜降",
+      "location": "福建",
+      "story": "中国白瓷代表"
+    },
+    {
+      "id": 47,
+      "name": "象牙白",
+      "hex": "#FFFBF0",
+      "rgb": [
+        255,
+        251,
+        240
+      ],
+      "meaning": "温润象牙白",
+      "relic": "建白瓷",
+      "poem": "象牙塔",
+      "poet": "鲁迅",
+      "dynasty": "明代",
+      "solar_term": "小寒",
+      "location": "德化",
+      "story": "明代德化窑象牙白"
+    },
+    {
+      "id": 48,
+      "name": "鱼肚白",
+      "hex": "#F5F5DC",
+      "rgb": [
+        245,
+        245,
+        220
+      ],
+      "meaning": "黎明天色",
+      "relic": "宋代绘画",
+      "poem": "鱼肚白东方",
+      "poet": "佚名",
+      "dynasty": "宋代",
+      "solar_term": "春分",
+      "location": "开封",
+      "story": "山水画天空渲染"
+    },
+    {
+      "id": 49,
+      "name": "玄青",
+      "hex": "#1B1B1B",
+      "rgb": [
+        27,
+        27,
+        27
+      ],
+      "meaning": "深青近黑",
+      "relic": "周代冕服",
+      "poem": "玄端章甫",
+      "poet": "论语",
+      "dynasty": "周代",
+      "solar_term": "冬至",
+      "location": "洛阳",
+      "story": "周礼玄端服色"
+    },
+    {
+      "id": 50,
+      "name": "乌金",
+      "hex": "#1C1C1C",
+      "rgb": [
+        28,
+        28,
+        28
+      ],
+      "meaning": "黑中泛金",
+      "relic": "建窑黑釉",
+      "poem": "乌金点点",
+      "poet": "陆羽",
+      "dynasty": "宋代",
+      "solar_term": "冬至",
+      "location": "建阳",
+      "story": "建窑兔毫盏釉色"
+    },
+    {
+      "id": 51,
+      "name": "墨色",
+      "hex": "#263238",
+      "rgb": [
+        38,
+        50,
+        56
+      ],
+      "meaning": "松烟墨色",
+      "relic": "徽墨",
+      "poem": "墨池飞出北溟鱼",
+      "poet": "李白",
+      "dynasty": "历代",
+      "solar_term": "大雪",
+      "location": "徽州",
+      "story": "文房四宝之墨"
+    },
+    {
+      "id": 52,
+      "name": "影青",
+      "hex": "#B2DFDB",
+      "rgb": [
+        178,
+        223,
+        219
+      ],
+      "meaning": "青白瓷雅称",
+      "relic": "景德镇影青瓷",
+      "poem": "影落清波",
+      "poet": "苏轼",
+      "dynasty": "宋代",
+      "solar_term": "白露",
+      "location": "景德镇",
+      "story": "宋代景德镇代表产品"
+    },
+    {
+      "id": 53,
+      "name": "秘色",
+      "hex": "#80CBC4",
+      "rgb": [
+        128,
+        203,
+        196
+      ],
+      "meaning": "秘色瓷之色",
+      "relic": "法门寺秘色瓷",
+      "poem": "夺得千峰翠色来",
+      "poet": "陆龟蒙",
+      "dynasty": "唐代",
+      "solar_term": "春分",
+      "location": "浙江",
+      "story": "越窑秘色瓷专供皇家"
+    },
+    {
+      "id": 54,
+      "name": "官绿",
+      "hex": "#388E3C",
+      "rgb": [
+        56,
+        142,
+        60
+      ],
+      "meaning": "官方绿色",
+      "relic": "明代官服",
+      "poem": "官绿袍",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "立夏",
+      "location": "南京",
+      "story": "明代六品以下官服"
+    },
+    {
+      "id": 55,
+      "name": "孔雀绿",
+      "hex": "#009688",
+      "rgb": [
+        0,
+        150,
+        136
+      ],
+      "meaning": "孔雀羽毛绿",
+      "relic": "元代釉陶",
+      "poem": "孔雀东南飞",
+      "poet": "乐府",
+      "dynasty": "元代",
+      "solar_term": "立夏",
+      "location": "景德镇",
+      "story": "孔雀绿釉陶器"
+    },
+    {
+      "id": 56,
+      "name": "松石绿",
+      "hex": "#26A69A",
+      "rgb": [
+        38,
+        166,
+        154
+      ],
+      "meaning": "绿松石色",
+      "relic": "清代瓷釉",
+      "poem": "松石映碧",
+      "poet": "佚名",
+      "dynasty": "清代",
+      "solar_term": "清明",
+      "location": "景德镇",
+      "story": "乾隆松石绿釉"
+    },
+    {
+      "id": 57,
+      "name": "翡翠",
+      "hex": "#00BFA5",
+      "rgb": [
+        0,
+        191,
+        165
+      ],
+      "meaning": "翡翠宝石",
+      "relic": "翡翠摆件",
+      "poem": "翡翠衾寒谁与共",
+      "poet": "白居易",
+      "dynasty": "清代",
+      "solar_term": "夏至",
+      "location": "昆明",
+      "story": "云南翡翠文化"
+    },
+    {
+      "id": 58,
+      "name": "湖蓝",
+      "hex": "#0288D1",
+      "rgb": [
+        2,
+        136,
+        209
+      ],
+      "meaning": "湖水之蓝",
+      "relic": "清代瓷釉",
+      "poem": "湖光山色",
+      "poet": "苏轼",
+      "dynasty": "清代",
+      "solar_term": "大暑",
+      "location": "景德镇",
+      "story": "清代蓝釉品种"
+    },
+    {
+      "id": 59,
+      "name": "宝石蓝",
+      "hex": "#1976D2",
+      "rgb": [
+        25,
+        118,
+        210
+      ],
+      "meaning": "蓝宝石色",
+      "relic": "珐琅器",
+      "poem": "蓝田日暖玉生烟",
+      "poet": "李商隐",
+      "dynasty": "清代",
+      "solar_term": "夏至",
+      "location": "北京",
+      "story": "景泰蓝主色"
+    },
+    {
+      "id": 60,
+      "name": "靛蓝",
+      "hex": "#283593",
+      "rgb": [
+        40,
+        53,
+        147
+      ],
+      "meaning": "蓝草染成",
+      "relic": "蓝印花布",
+      "poem": "青取之于蓝",
+      "poet": "荀子",
+      "dynasty": "明代",
+      "solar_term": "小满",
+      "location": "南通",
+      "story": "南通蓝印花布非遗"
+    },
+    {
+      "id": 61,
+      "name": "宝蓝",
+      "hex": "#0D47A1",
+      "rgb": [
+        13,
+        71,
+        161
+      ],
+      "meaning": "贵重蓝宝石",
+      "relic": "清代朝珠",
+      "poem": "宝蓝生辉",
+      "poet": "佚名",
+      "dynasty": "清代",
+      "solar_term": "秋分",
+      "location": "北京",
+      "story": "朝珠宝石配色"
+    },
+    {
+      "id": 62,
+      "name": "妃红",
+      "hex": "#E91E63",
+      "rgb": [
+        233,
+        30,
+        99
+      ],
+      "meaning": "妃子胭脂红",
+      "relic": "唐代化妆",
+      "poem": "妃子笑",
+      "poet": "杜牧",
+      "dynasty": "唐代",
+      "solar_term": "夏至",
+      "location": "长安",
+      "story": "唐代仕女妆色"
+    },
+    {
+      "id": 63,
+      "name": "石榴红",
+      "hex": "#F44336",
+      "rgb": [
+        244,
+        67,
+        54
+      ],
+      "meaning": "石榴果实色",
+      "relic": "明代瓷器",
+      "poem": "石榴花开",
+      "poet": "韩愈",
+      "dynasty": "明代",
+      "solar_term": "端午",
+      "location": "景德镇",
+      "story": "釉里红典型色"
+    },
+    {
+      "id": 64,
+      "name": "海棠",
+      "hex": "#E57373",
+      "rgb": [
+        229,
+        115,
+        115
+      ],
+      "meaning": "海棠花色",
+      "relic": "清代瓷器",
+      "poem": "海棠不惜胭脂色",
+      "poet": "陈与义",
+      "dynasty": "清代",
+      "solar_term": "春分",
+      "location": "景德镇",
+      "story": "粉彩海棠红"
+    },
+    {
+      "id": 65,
+      "name": "绛紫",
+      "hex": "#6A1B9A",
+      "rgb": [
+        106,
+        27,
+        154
+      ],
+      "meaning": "深紫红色",
+      "relic": "汉代织锦",
+      "poem": "绛紫罗襦",
+      "poet": "汉乐府",
+      "dynasty": "汉代",
+      "solar_term": "寒露",
+      "location": "长沙",
+      "story": "马王堆织锦"
+    },
+    {
+      "id": 66,
+      "name": "葡萄紫",
+      "hex": "#7B1FA2",
+      "rgb": [
+        123,
+        31,
+        162
+      ],
+      "meaning": "葡萄皮紫",
+      "relic": "唐代服饰",
+      "poem": "葡萄美酒夜光杯",
+      "poet": "王翰",
+      "dynasty": "唐代",
+      "solar_term": "立秋",
+      "location": "长安",
+      "story": "唐代流行紫衫"
+    },
+    {
+      "id": 67,
+      "name": "茄紫",
+      "hex": "#512DA8",
+      "rgb": [
+        81,
+        45,
+        168
+      ],
+      "meaning": "茄子之紫",
+      "relic": "宋代服饰",
+      "poem": "紫茄",
+      "poet": "陆游",
+      "dynasty": "宋代",
+      "solar_term": "处暑",
+      "location": "开封",
+      "story": "宋代紫服"
+    },
+    {
+      "id": 68,
+      "name": "青莲",
+      "hex": "#5E35B1",
+      "rgb": [
+        94,
+        53,
+        177
+      ],
+      "meaning": "青莲色",
+      "relic": "佛教造像",
+      "poem": "青莲居士",
+      "poet": "李白",
+      "dynasty": "唐代",
+      "solar_term": "清明",
+      "location": "敦煌",
+      "story": "佛教壁画常用色"
+    },
+    {
+      "id": 69,
+      "name": "莲青",
+      "hex": "#7E57C2",
+      "rgb": [
+        126,
+        87,
+        194
+      ],
+      "meaning": "莲蓬青紫",
+      "relic": "清代服饰",
+      "poem": "莲叶何田田",
+      "poet": "汉乐府",
+      "dynasty": "清代",
+      "solar_term": "大暑",
+      "location": "苏州",
+      "story": "江南染坊莲青"
+    },
+    {
+      "id": 70,
+      "name": "鼠灰",
+      "hex": "#9E9E9E",
+      "rgb": [
+        158,
+        158,
+        158
+      ],
+      "meaning": "老鼠毛灰",
+      "relic": "明代服饰",
+      "poem": "鼠蹊",
+      "poet": "庄子",
+      "dynasty": "明代",
+      "solar_term": "霜降",
+      "location": "南京",
+      "story": "明代朴素服饰色"
+    },
+    {
+      "id": 71,
+      "name": "银灰",
+      "hex": "#BDBDBD",
+      "rgb": [
+        189,
+        189,
+        189
+      ],
+      "meaning": "白银氧化色",
+      "relic": "银器",
+      "poem": "银烛秋光",
+      "poet": "杜牧",
+      "dynasty": "唐代",
+      "solar_term": "中秋",
+      "location": "长安",
+      "story": "唐代银器色泽"
+    },
+    {
+      "id": 72,
+      "name": "蟹青",
+      "hex": "#78909C",
+      "rgb": [
+        120,
+        144,
+        156
+      ],
+      "meaning": "蟹壳青灰",
+      "relic": "宋代瓷釉",
+      "poem": "蟹青霜重",
+      "poet": "苏轼",
+      "dynasty": "宋代",
+      "solar_term": "寒露",
+      "location": "龙泉",
+      "story": "龙泉窑青釉变体"
+    },
+    {
+      "id": 73,
+      "name": "鸦青",
+      "hex": "#455A64",
+      "rgb": [
+        69,
+        90,
+        100
+      ],
+      "meaning": "乌鸦青灰",
+      "relic": "元代服饰",
+      "poem": "鸦青",
+      "poet": "元曲",
+      "dynasty": "元代",
+      "solar_term": "立冬",
+      "location": "大都",
+      "story": "元代纸币色"
+    },
+    {
+      "id": 74,
+      "name": "杏仁",
+      "hex": "#FFE0B2",
+      "rgb": [
+        255,
+        224,
+        178
+      ],
+      "meaning": "杏仁果色",
+      "relic": "清代瓷器",
+      "poem": "杏仁酪",
+      "poet": "袁枚",
+      "dynasty": "清代",
+      "solar_term": "惊蛰",
+      "location": "景德镇",
+      "story": "康熙黄釉品种"
+    },
+    {
+      "id": 75,
+      "name": "蜜色",
+      "hex": "#FFECB3",
+      "rgb": [
+        255,
+        236,
+        179
+      ],
+      "meaning": "蜂蜜之色",
+      "relic": "宋代丝绸",
+      "poem": "蜜蜡黄",
+      "poet": "陆游",
+      "dynasty": "宋代",
+      "solar_term": "芒种",
+      "location": "杭州",
+      "story": "宋代宫廷丝绸"
+    },
+    {
+      "id": 76,
+      "name": "檀木",
+      "hex": "#6D4C41",
+      "rgb": [
+        109,
+        76,
+        65
+      ],
+      "meaning": "紫檀木色",
+      "relic": "明清家具",
+      "poem": "檀香木",
+      "poet": "李时珍",
+      "dynasty": "明代",
+      "solar_term": "秋分",
+      "location": "北京",
+      "story": "紫檀家具"
+    },
+    {
+      "id": 77,
+      "name": "驼色",
+      "hex": "#A1887F",
+      "rgb": [
+        161,
+        136,
+        127
+      ],
+      "meaning": "骆驼毛色",
+      "relic": "蒙古服饰",
+      "poem": "驼铃声响",
+      "poet": "民歌",
+      "dynasty": "元代",
+      "solar_term": "寒露",
+      "location": "内蒙古",
+      "story": "草原服饰常用色"
+    },
+    {
+      "id": 78,
+      "name": "咖啡",
+      "hex": "#5D4037",
+      "rgb": [
+        93,
+        64,
+        55
+      ],
+      "meaning": "咖啡豆色",
+      "relic": "清代瓷器",
+      "poem": "咖啡色釉",
+      "poet": "唐英",
+      "dynasty": "清代",
+      "solar_term": "大雪",
+      "location": "景德镇",
+      "story": "窑变釉色"
+    },
+    {
+      "id": 79,
+      "name": "琥珀黄",
+      "hex": "#FFB300",
+      "rgb": [
+        255,
+        179,
+        0
+      ],
+      "meaning": "琥珀金黄",
+      "relic": "明代琉璃",
+      "poem": "琥珀光",
+      "poet": "李白",
+      "dynasty": "明代",
+      "solar_term": "秋分",
+      "location": "北京",
+      "story": "琉璃瓦釉色"
+    },
+    {
+      "id": 80,
+      "name": "杏子",
+      "hex": "#FFAB91",
+      "rgb": [
+        255,
+        171,
+        145
+      ],
+      "meaning": "熟杏之色",
+      "relic": "唐代服饰",
+      "poem": "红杏枝头春意闹",
+      "poet": "宋祁",
+      "dynasty": "唐代",
+      "solar_term": "清明",
+      "location": "长安",
+      "story": "唐代女子服饰"
+    },
+    {
+      "id": 81,
+      "name": "橘黄",
+      "hex": "#FF9800",
+      "rgb": [
+        255,
+        152,
+        0
+      ],
+      "meaning": "柑橘之色",
+      "relic": "宋代绘画",
+      "poem": "橘黄橙绿",
+      "poet": "苏轼",
+      "dynasty": "宋代",
+      "solar_term": "霜降",
+      "location": "开封",
+      "story": "宋代花鸟画用色"
+    },
+    {
+      "id": 82,
+      "name": "橙红",
+      "hex": "#FF7043",
+      "rgb": [
+        255,
+        112,
+        67
+      ],
+      "meaning": "橙子红",
+      "relic": "清代瓷器",
+      "poem": "橙红蟹肥",
+      "poet": "曹雪芹",
+      "dynasty": "清代",
+      "solar_term": "中秋",
+      "location": "景德镇",
+      "story": "矾红釉品种"
+    },
+    {
+      "id": 83,
+      "name": "嫣红",
+      "hex": "#EC407A",
+      "rgb": [
+        236,
+        64,
+        122
+      ],
+      "meaning": "娇艳之红",
+      "relic": "清代旗袍",
+      "poem": "姹紫嫣红",
+      "poet": "汤显祖",
+      "dynasty": "清代",
+      "solar_term": "春分",
+      "location": "苏州",
+      "story": "苏绣配色"
+    },
+    {
+      "id": 84,
+      "name": "茜色",
+      "hex": "#D81B60",
+      "rgb": [
+        216,
+        27,
+        96
+      ],
+      "meaning": "茜草染红",
+      "relic": "汉代服饰",
+      "poem": "茜裙",
+      "poet": "诗经",
+      "dynasty": "汉代",
+      "solar_term": "立夏",
+      "location": "长安",
+      "story": "茜草是最早红色染料"
+    },
+    {
+      "id": 85,
+      "name": "赤金",
+      "hex": "#FFD700",
+      "rgb": [
+        255,
+        215,
+        0
+      ],
+      "meaning": "纯金之色",
+      "relic": "金器",
+      "poem": "金碧辉煌",
+      "poet": "罗邺",
+      "dynasty": "历代",
+      "solar_term": "冬至",
+      "location": "北京",
+      "story": "皇家金器"
+    },
+    {
+      "id": 86,
+      "name": "槐黄",
+      "hex": "#FDD835",
+      "rgb": [
+        253,
+        216,
+        53
+      ],
+      "meaning": "槐花之黄",
+      "relic": "明代服饰",
+      "poem": "槐花黄",
+      "poet": "李商隐",
+      "dynasty": "明代",
+      "solar_term": "小满",
+      "location": "北京",
+      "story": "科举放榜时槐花黄"
+    },
+    {
+      "id": 87,
+      "name": "松花",
+      "hex": "#9E9D24",
+      "rgb": [
+        158,
+        157,
+        36
+      ],
+      "meaning": "松花粉色",
+      "relic": "清代御墨",
+      "poem": "松花酿酒",
+      "poet": "张可久",
+      "dynasty": "清代",
+      "solar_term": "谷雨",
+      "location": "徽州",
+      "story": "御制松花石砚"
+    },
+    {
+      "id": 88,
+      "name": "芽绿",
+      "hex": "#8BC34A",
+      "rgb": [
+        139,
+        195,
+        74
+      ],
+      "meaning": "嫩芽之绿",
+      "relic": "宋代绘画",
+      "poem": "草色遥看近却无",
+      "poet": "韩愈",
+      "dynasty": "宋代",
+      "solar_term": "雨水",
+      "location": "开封",
+      "story": "早春画意"
+    },
+    {
+      "id": 89,
+      "name": "石绿",
+      "hex": "#33691E",
+      "rgb": [
+        51,
+        105,
+        30
+      ],
+      "meaning": "孔雀石绿",
+      "relic": "敦煌壁画",
+      "poem": "石绿染山",
+      "poet": "王维",
+      "dynasty": "唐代",
+      "solar_term": "清明",
+      "location": "敦煌",
+      "story": "青绿山水主色"
+    },
+    {
+      "id": 90,
+      "name": "群青",
+      "hex": "#3949AB",
+      "rgb": [
+        57,
+        73,
+        171
+      ],
+      "meaning": "天然群青",
+      "relic": "敦煌壁画",
+      "poem": "群青染天",
+      "poet": "佚名",
+      "dynasty": "唐代",
+      "solar_term": "立秋",
+      "location": "敦煌",
+      "story": "青金石研磨颜料"
+    },
+    {
+      "id": 91,
+      "name": "孔雀蓝",
+      "hex": "#00838F",
+      "rgb": [
+        0,
+        131,
+        143
+      ],
+      "meaning": "孔雀蓝",
+      "relic": "珐华器",
+      "poem": "孔雀开屏",
+      "poet": "民歌",
+      "dynasty": "明代",
+      "solar_term": "立夏",
+      "location": "景德镇",
+      "story": "珐华孔雀蓝"
+    },
+    {
+      "id": 92,
+      "name": "鱼白",
+      "hex": "#E3F2FD",
+      "rgb": [
+        227,
+        242,
+        253
+      ],
+      "meaning": "鱼肚白",
+      "relic": "宋代绘画",
+      "poem": "鱼白东方",
+      "poet": "佚名",
+      "dynasty": "宋代",
+      "solar_term": "春分",
+      "location": "开封",
+      "story": "山水画天际"
+    },
+    {
+      "id": 93,
+      "name": "牙白",
+      "hex": "#FFFDE7",
+      "rgb": [
+        255,
+        253,
+        231
+      ],
+      "meaning": "象牙白",
+      "relic": "德化瓷",
+      "poem": "牙白如玉",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "小寒",
+      "location": "德化",
+      "story": "德化象牙白"
+    },
+    {
+      "id": 94,
+      "name": "莲白",
+      "hex": "#FCE4EC",
+      "rgb": [
+        252,
+        228,
+        236
+      ],
+      "meaning": "莲花白",
+      "relic": "宋代服饰",
+      "poem": "莲白如玉",
+      "poet": "周邦彦",
+      "dynasty": "宋代",
+      "solar_term": "大暑",
+      "location": "杭州",
+      "story": "宋代淡雅服饰"
+    },
+    {
+      "id": 95,
+      "name": "米白",
+      "hex": "#FFF8E7",
+      "rgb": [
+        255,
+        248,
+        231
+      ],
+      "meaning": "米粒之白",
+      "relic": "宣纸",
+      "poem": "米白纸",
+      "poet": "沈括",
+      "dynasty": "宋代",
+      "solar_term": "秋分",
+      "location": "宣城",
+      "story": "宣纸本色"
+    },
+    {
+      "id": 96,
+      "name": "乌黑",
+      "hex": "#171717",
+      "rgb": [
+        23,
+        23,
+        23
+      ],
+      "meaning": "乌鸦之黑",
+      "relic": "建盏",
+      "poem": "乌金釉",
+      "poet": "陆羽",
+      "dynasty": "宋代",
+      "solar_term": "冬至",
+      "location": "建阳",
+      "story": "建窑乌金盏"
+    },
+    {
+      "id": 97,
+      "name": "漆黑",
+      "hex": "#0D0D0D",
+      "rgb": [
+        13,
+        13,
+        13
+      ],
+      "meaning": "漆器之黑",
+      "relic": "楚式漆器",
+      "poem": "漆黑一团",
+      "poet": "佚名",
+      "dynasty": "战国",
+      "solar_term": "大雪",
+      "location": "荆州",
+      "story": "楚漆器黑漆"
+    },
+    {
+      "id": 98,
+      "name": "铅白",
+      "hex": "#CFD8DC",
+      "rgb": [
+        207,
+        216,
+        220
+      ],
+      "meaning": "铅粉之白",
+      "relic": "唐代化妆",
+      "poem": "铅华不可弃",
+      "poet": "佚名",
+      "dynasty": "唐代",
+      "solar_term": "春分",
+      "location": "长安",
+      "story": "古代化妆品"
+    },
+    {
+      "id": 99,
+      "name": "玛瑙",
+      "hex": "#FFCCBC",
+      "rgb": [
+        255,
+        204,
+        188
+      ],
+      "meaning": "玛瑙红",
+      "relic": "玛瑙杯",
+      "poem": "葡萄美酒夜光杯",
+      "poet": "王翰",
+      "dynasty": "唐代",
+      "solar_term": "立秋",
+      "location": "西安",
+      "story": "镶金兽首玛瑙杯"
+    },
+    {
+      "id": 100,
+      "name": "珊瑚",
+      "hex": "#FF8A80",
+      "rgb": [
+        255,
+        138,
+        128
+      ],
+      "meaning": "珊瑚红",
+      "relic": "珊瑚饰品",
+      "poem": "珊瑚枝",
+      "poet": "李商隐",
+      "dynasty": "清代",
+      "solar_term": "夏至",
+      "location": "北京",
+      "story": "清代朝珠用珊瑚"
+    },
+    {
+      "id": 101,
+      "name": "琥珀色",
+      "hex": "#FFAB40",
+      "rgb": [
+        255,
+        171,
+        64
+      ],
+      "meaning": "琥珀宝石",
+      "relic": "琥珀饰品",
+      "poem": "琥珀初成",
+      "poet": "李商隐",
+      "dynasty": "汉代",
+      "solar_term": "秋分",
+      "location": "西安",
+      "story": "汉代琥珀文物"
+    },
+    {
+      "id": 102,
+      "name": "琉璃",
+      "hex": "#7FB3D5",
+      "rgb": [
+        127,
+        179,
+        213
+      ],
+      "meaning": "琉璃宝石之色，晶莹剔透",
+      "relic": "唐代琉璃器",
+      "poem": "琉璃钟，琥珀浓",
+      "poet": "李贺",
+      "dynasty": "唐代",
+      "solar_term": "夏至",
+      "location": "西安",
+      "story": "唐代皇室喜爱的进口宝石色"
+    },
+    {
+      "id": 103,
+      "name": "砗渠白",
+      "hex": "#FFFDD0",
+      "rgb": [
+        255,
+        253,
+        208
+      ],
+      "meaning": "砗渠贝壳内侧之白",
+      "relic": "佛教法器",
+      "poem": "七宝之一的洁白",
+      "poet": "佛经",
+      "dynasty": "历代",
+      "solar_term": "大暑",
+      "location": "南海",
+      "story": "佛教七宝之一，象征纯洁"
+    },
+    {
+      "id": 104,
+      "name": "翠微",
+      "hex": "#4DB6AC",
+      "rgb": [
+        77,
+        182,
+        172
+      ],
+      "meaning": "山气青绿",
+      "relic": "宋代山水画",
+      "poem": "翠微深处有人家",
+      "poet": "杜牧",
+      "dynasty": "唐代",
+      "solar_term": "清明",
+      "location": "长安",
+      "story": "形容山色青翠朦胧"
+    },
+    {
+      "id": 105,
+      "name": "银红",
+      "hex": "#F06292",
+      "rgb": [
+        240,
+        98,
+        146
+      ],
+      "meaning": "银粉调制的红色",
+      "relic": "清代瓷器",
+      "poem": "银红柳绿",
+      "poet": "曹雪芹",
+      "dynasty": "清代",
+      "solar_term": "惊蛰",
+      "location": "景德镇",
+      "story": "《红楼梦》中提到的经典配色"
+    },
+    {
+      "id": 106,
+      "name": "水红",
+      "hex": "#FFCDD2",
+      "rgb": [
+        255,
+        205,
+        210
+      ],
+      "meaning": "如水般淡雅的红",
+      "relic": "宋代织锦",
+      "poem": "水红衫子",
+      "poet": "花蕊夫人",
+      "dynasty": "宋代",
+      "solar_term": "谷雨",
+      "location": "成都",
+      "story": "蜀锦中的淡雅红色"
+    },
+    {
+      "id": 107,
+      "name": "鹤顶红",
+      "hex": "#B71C1C",
+      "rgb": [
+        183,
+        28,
+        28
+      ],
+      "meaning": "丹顶鹤头顶之红",
+      "relic": "明代官服",
+      "poem": "鹤顶朱砂",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "白露",
+      "location": "北京",
+      "story": "象征高官显爵的红色"
+    },
+    {
+      "id": 108,
+      "name": "胭脂虫",
+      "hex": "#AD1457",
+      "rgb": [
+        173,
+        20,
+        87
+      ],
+      "meaning": "胭脂虫提取的深红",
+      "relic": "清代织造",
+      "poem": "虫染胭脂",
+      "poet": "佚名",
+      "dynasty": "清代",
+      "solar_term": "小暑",
+      "location": "苏州",
+      "story": "引进自西方的染料工艺"
+    },
+    {
+      "id": 109,
+      "name": "蟹壳青",
+      "hex": "#546E7A",
+      "rgb": [
+        84,
+        110,
+        122
+      ],
+      "meaning": "熟蟹壳色",
+      "relic": "明代瓷器",
+      "poem": "蟹壳青釉",
+      "poet": "唐英",
+      "dynasty": "明代",
+      "solar_term": "寒露",
+      "location": "景德镇",
+      "story": "仿自然界生物色泽"
+    },
+    {
+      "id": 110,
+      "name": "鳝鱼黄",
+      "hex": "#FBC02D",
+      "rgb": [
+        251,
+        192,
+        45
+      ],
+      "meaning": "鳝鱼背部黄",
+      "relic": "清代茶叶末釉",
+      "poem": "鳝鱼黄釉",
+      "poet": "唐英",
+      "dynasty": "清代",
+      "solar_term": "立秋",
+      "location": "景德镇",
+      "story": "茶叶末釉的变种"
+    },
+    {
+      "id": 111,
+      "name": "油滴",
+      "hex": "#424242",
+      "rgb": [
+        66,
+        66,
+        66
+      ],
+      "meaning": "建盏油滴斑",
+      "relic": "建窑盏",
+      "poem": "油滴天目",
+      "poet": "日本茶道",
+      "dynasty": "宋代",
+      "solar_term": "大寒",
+      "location": "建阳",
+      "story": "被日本奉为国宝的釉色"
+    },
+    {
+      "id": 112,
+      "name": "点翠",
+      "hex": "#00ACC1",
+      "rgb": [
+        0,
+        172,
+        193
+      ],
+      "meaning": "翠鸟羽毛蓝",
+      "relic": "清代头饰",
+      "poem": "点翠流苏",
+      "poet": "纳兰性德",
+      "dynasty": "清代",
+      "solar_term": "春分",
+      "location": "北京",
+      "story": "即将失传的传统工艺色"
+    },
+    {
+      "id": 113,
+      "name": "浅绛",
+      "hex": "#BCAAA4",
+      "rgb": [
+        188,
+        170,
+        164
+      ],
+      "meaning": "水墨淡彩",
+      "relic": "元代山水画",
+      "poem": "浅绛山水",
+      "poet": "黄公望",
+      "dynasty": "元代",
+      "solar_term": "秋分",
+      "location": "富春",
+      "story": "文人画的重要技法色"
+    },
+    {
+      "id": 114,
+      "name": "钛白",
+      "hex": "#FFFFFF",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "meaning": "现代颜料白",
+      "relic": "现代绘画",
+      "poem": "白净无瑕",
+      "poet": "徐悲鸿",
+      "dynasty": "近代",
+      "solar_term": "大雪",
+      "location": "上海",
+      "story": "覆盖力最强的白色颜料"
+    },
+    {
+      "id": 115,
+      "name": "错金",
+      "hex": "#FFCA28",
+      "rgb": [
+        255,
+        202,
+        40
+      ],
+      "meaning": "金丝嵌入",
+      "relic": "战国兵器",
+      "poem": "错金铭文",
+      "poet": "史记",
+      "dynasty": "战国",
+      "solar_term": "秋分",
+      "location": "邯郸",
+      "story": "青铜器精细装饰工艺"
+    },
+    {
+      "id": 116,
+      "name": "宋锦",
+      "hex": "#8E24AA",
+      "rgb": [
+        142,
+        36,
+        170
+      ],
+      "meaning": "苏州宋锦色",
+      "relic": "宋代书画装裱",
+      "poem": "宋锦装池",
+      "poet": "米芾",
+      "dynasty": "宋代",
+      "solar_term": "秋分",
+      "location": "苏州",
+      "story": "书画装裱的高级用料"
+    },
+    {
+      "id": 117,
+      "name": "蜀锦",
+      "hex": "#C2185B",
+      "rgb": [
+        194,
+        24,
+        91
+      ],
+      "meaning": "四川蜀锦色",
+      "relic": "汉代织机",
+      "poem": "蜀锦吴绫",
+      "poet": "陆游",
+      "dynasty": "汉代",
+      "solar_term": "小满",
+      "location": "成都",
+      "story": "丝绸之路上的硬通货"
+    },
+    {
+      "id": 118,
+      "name": "星灰",
+      "hex": "#B0BEC5",
+      "rgb": [
+        176,
+        190,
+        197
+      ],
+      "meaning": "夜空星辰间的灰",
+      "relic": "元代水墨",
+      "poem": "星河欲转",
+      "poet": "李清照",
+      "dynasty": "宋代",
+      "solar_term": "大寒",
+      "location": "济南",
+      "story": "形容夜色深沉中的微光"
+    },
+    {
+      "id": 119,
+      "name": "土黄",
+      "hex": "#D4A017",
+      "rgb": [
+        212,
+        160,
+        23
+      ],
+      "meaning": "黄土本色",
+      "relic": "秦始皇陵",
+      "poem": "黄土陇头",
+      "poet": "佚名",
+      "dynasty": "秦代",
+      "solar_term": "秋分",
+      "location": "西安",
+      "story": "大地最质朴的颜色"
+    },
+    {
+      "id": 120,
+      "name": "雄黄",
+      "hex": "#FFA000",
+      "rgb": [
+        255,
+        160,
+        0
+      ],
+      "meaning": "雄黄矿石",
+      "relic": "端午习俗",
+      "poem": "雄黄酒",
+      "poet": "民俗",
+      "dynasty": "历代",
+      "solar_term": "端午",
+      "location": "全国",
+      "story": "端午节驱邪避毒之色"
+    },
+    {
+      "id": 121,
+      "name": "玫瑰紫",
+      "hex": "#AB47BC",
+      "rgb": [
+        171,
+        71,
+        188
+      ],
+      "meaning": "玫瑰花紫",
+      "relic": "近代刺绣",
+      "poem": "玫瑰香露",
+      "poet": "曹雪芹",
+      "dynasty": "清代",
+      "solar_term": "谷雨",
+      "location": "苏州",
+      "story": "浪漫优雅的紫色"
+    },
+    {
+      "id": 122,
+      "name": "毛蓝",
+      "hex": "#5C6BC0",
+      "rgb": [
+        92,
+        107,
+        192
+      ],
+      "meaning": "比靛蓝浅",
+      "relic": "民国布衣",
+      "poem": "毛蓝布衫",
+      "poet": "鲁迅",
+      "dynasty": "近代",
+      "solar_term": "立秋",
+      "location": "绍兴",
+      "story": "普通百姓常穿的布料色"
+    },
+    {
+      "id": 123,
+      "name": "海蓝",
+      "hex": "#0277BD",
+      "rgb": [
+        2,
+        119,
+        189
+      ],
+      "meaning": "深海之蓝",
+      "relic": "清代广彩",
+      "poem": "海天一色",
+      "poet": "王勃",
+      "dynasty": "唐代",
+      "solar_term": "大暑",
+      "location": "广州",
+      "story": "象征广阔与深邃"
+    },
+    {
+      "id": 124,
+      "name": "芥绿",
+      "hex": "#9CCC65",
+      "rgb": [
+        156,
+        204,
+        101
+      ],
+      "meaning": "芥菜叶绿",
+      "relic": "清代绘画",
+      "poem": "芥子纳须弥",
+      "poet": "维摩诘经",
+      "dynasty": "历代",
+      "solar_term": "白露",
+      "location": "江南",
+      "story": "略带黄调的绿色"
+    },
+    {
+      "id": 125,
+      "name": "杨绿",
+      "hex": "#AED581",
+      "rgb": [
+        174,
+        213,
+        129
+      ],
+      "meaning": "杨树新叶",
+      "relic": "边塞诗境",
+      "poem": "杨柳依依",
+      "poet": "诗经",
+      "dynasty": "周代",
+      "solar_term": "春分",
+      "location": "关中",
+      "story": "离别与思念的象征"
+    },
+    {
+      "id": 126,
+      "name": "杉绿",
+      "hex": "#4E8038",
+      "rgb": [
+        78,
+        128,
+        56
+      ],
+      "meaning": "水杉叶色",
+      "relic": "南方建筑",
+      "poem": "杉木成林",
+      "poet": "佚名",
+      "dynasty": "历代",
+      "solar_term": "立秋",
+      "location": "西南",
+      "story": "建筑用材的自然色"
+    },
+    {
+      "id": 127,
+      "name": "新酿",
+      "hex": "#FFF9C4",
+      "rgb": [
+        255,
+        249,
+        196
+      ],
+      "meaning": "新米酒浊白",
+      "relic": "唐代酒肆",
+      "poem": "绿蚁新醅酒",
+      "poet": "白居易",
+      "dynasty": "唐代",
+      "solar_term": "小雪",
+      "location": "洛阳",
+      "story": "冬日暖酒的温馨色"
+    },
+    {
+      "id": 128,
+      "name": "葵赤",
+      "hex": "#FF5722",
+      "rgb": [
+        255,
+        87,
+        34
+      ],
+      "meaning": "蜀葵深红",
+      "relic": "唐代庭院",
+      "poem": "葵花向日倾",
+      "poet": "司马光",
+      "dynasty": "宋代",
+      "solar_term": "夏至",
+      "location": "洛阳",
+      "story": "忠诚向阳的象征"
+    },
+    {
+      "id": 129,
+      "name": "李粉",
+      "hex": "#F8BBD0",
+      "rgb": [
+        248,
+        187,
+        208
+      ],
+      "meaning": "李花淡粉",
+      "relic": "唐代仕女图",
+      "poem": "桃李春风",
+      "poet": "黄庭坚",
+      "dynasty": "宋代",
+      "solar_term": "春分",
+      "location": "开封",
+      "story": "春日繁花似锦的代表"
+    },
+    {
+      "id": 130,
+      "name": "木兰",
+      "hex": "#D1C4E9",
+      "rgb": [
+        209,
+        196,
+        233
+      ],
+      "meaning": "木兰花紫",
+      "relic": "乐府诗集",
+      "poem": "木兰当户织",
+      "poet": "乐府",
+      "dynasty": "北朝",
+      "solar_term": "惊蛰",
+      "location": "北方",
+      "story": "巾帼英雄的象征色"
+    },
+    {
+      "id": 131,
+      "name": "辛夷",
+      "hex": "#CE93D8",
+      "rgb": [
+        206,
+        147,
+        216
+      ],
+      "meaning": "辛夷花苞紫",
+      "relic": "王维辋川",
+      "poem": "木末芙蓉花",
+      "poet": "王维",
+      "dynasty": "唐代",
+      "solar_term": "雨水",
+      "location": "蓝田",
+      "story": "山中高士的隐居色"
+    },
+    {
+      "id": 132,
+      "name": "蜀葵",
+      "hex": "#EF5350",
+      "rgb": [
+        239,
+        83,
+        80
+      ],
+      "meaning": "蜀葵深红",
+      "relic": "宋代团扇",
+      "poem": "蜀葵花开",
+      "poet": "陈陶",
+      "dynasty": "唐代",
+      "solar_term": "小暑",
+      "location": "成都",
+      "story": "夏日最长的花期"
+    },
+    {
+      "id": 133,
+      "name": "墨绿",
+      "hex": "#2E7D32",
+      "rgb": [
+        46,
+        125,
+        50
+      ],
+      "meaning": "墨中带绿",
+      "relic": "墨锭",
+      "poem": "墨池飞出北溟鱼",
+      "poet": "李白",
+      "dynasty": "明代",
+      "solar_term": "小暑",
+      "location": "徽州",
+      "story": "徽墨之绿锭品类"
+    },
+    {
+      "id": 134,
+      "name": "苍黑",
+      "hex": "#37474F",
+      "rgb": [
+        55,
+        71,
+        79
+      ],
+      "meaning": "苍茫之黑",
+      "relic": "秦俑",
+      "poem": "苍黑如铁",
+      "poet": "司马迁",
+      "dynasty": "秦代",
+      "solar_term": "立冬",
+      "location": "西安",
+      "story": "兵马俑彩绘底色"
+    },
+    {
+      "id": 135,
+      "name": "鸦黑",
+      "hex": "#212121",
+      "rgb": [
+        33,
+        33,
+        33
+      ],
+      "meaning": "乌鸦羽黑",
+      "relic": "漆器",
+      "poem": "鸦翎羽箭",
+      "poet": "李贺",
+      "dynasty": "战国",
+      "solar_term": "寒露",
+      "location": "荆州",
+      "story": "楚式漆器黑漆"
+    },
+    {
+      "id": 136,
+      "name": "豆绿",
+      "hex": "#66BB6A",
+      "rgb": [
+        102,
+        187,
+        106
+      ],
+      "meaning": "青豆之色",
+      "relic": "钧窑",
+      "poem": "豆绿初熟",
+      "poet": "范成大",
+      "dynasty": "宋代",
+      "solar_term": "小满",
+      "location": "禹州",
+      "story": "钧窑豆绿釉"
+    },
+    {
+      "id": 137,
+      "name": "瓜皮绿",
+      "hex": "#43A047",
+      "rgb": [
+        67,
+        160,
+        71
+      ],
+      "meaning": "西瓜皮绿",
+      "relic": "清代瓷器",
+      "poem": "瓜皮绿釉",
+      "poet": "唐英",
+      "dynasty": "清代",
+      "solar_term": "大暑",
+      "location": "景德镇",
+      "story": "康熙创烧瓜皮绿"
+    },
+    {
+      "id": 138,
+      "name": "藏青",
+      "hex": "#1A237E",
+      "rgb": [
+        26,
+        35,
+        126
+      ],
+      "meaning": "西藏僧袍色",
+      "relic": "藏传佛教服饰",
+      "poem": "青稞酒",
+      "poet": "民歌",
+      "dynasty": "历代",
+      "solar_term": "立秋",
+      "location": "西藏",
+      "story": "藏族传统服饰色"
+    },
+    {
+      "id": 139,
+      "name": "米黄",
+      "hex": "#FFF8E1",
+      "rgb": [
+        255,
+        248,
+        225
+      ],
+      "meaning": "稻米之色",
+      "relic": "宋代纸张",
+      "poem": "米黄纸",
+      "poet": "沈括",
+      "dynasty": "宋代",
+      "solar_term": "秋分",
+      "location": "宣城",
+      "story": "宣纸本色"
+    },
+    {
+      "id": 140,
+      "name": "栗色",
+      "hex": "#8D6E63",
+      "rgb": [
+        141,
+        110,
+        99
+      ],
+      "meaning": "栗子壳色",
+      "relic": "明代家具",
+      "poem": "栗壳色",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "霜降",
+      "location": "苏州",
+      "story": "明式家具配色"
+    },
+    {
+      "id": 141,
+      "name": "茶褐",
+      "hex": "#4E342E",
+      "rgb": [
+        78,
+        52,
+        46
+      ],
+      "meaning": "浓茶之色",
+      "relic": "建盏",
+      "poem": "茶色如金",
+      "poet": "陆羽",
+      "dynasty": "宋代",
+      "solar_term": "白露",
+      "location": "建阳",
+      "story": "建盏窑变釉"
+    },
+    {
+      "id": 142,
+      "name": "金茶",
+      "hex": "#F9A825",
+      "rgb": [
+        249,
+        168,
+        37
+      ],
+      "meaning": "金茶色",
+      "relic": "清代龙袍",
+      "poem": "金碧辉煌",
+      "poet": "佚名",
+      "dynasty": "清代",
+      "solar_term": "冬至",
+      "location": "北京",
+      "story": "皇家织锦用色"
+    },
+    {
+      "id": 143,
+      "name": "朱砂",
+      "hex": "#E53935",
+      "rgb": [
+        229,
+        57,
+        53
+      ],
+      "meaning": "朱砂矿色",
+      "relic": "甲骨文",
+      "poem": "朱砂点额",
+      "poet": "佚名",
+      "dynasty": "商代",
+      "solar_term": "夏至",
+      "location": "安阳",
+      "story": "甲骨刻辞涂朱"
+    },
+    {
+      "id": 144,
+      "name": "泥金",
+      "hex": "#F9A825",
+      "rgb": [
+        249,
+        168,
+        37
+      ],
+      "meaning": "金粉调色",
+      "relic": "唐代绘画",
+      "poem": "泥金帖子",
+      "poet": "王建",
+      "dynasty": "唐代",
+      "solar_term": "春节",
+      "location": "长安",
+      "story": "唐代金碧山水"
+    },
+    {
+      "id": 145,
+      "name": "柠檬",
+      "hex": "#F9A825",
+      "rgb": [
+        249,
+        168,
+        37
+      ],
+      "meaning": "柠檬果色",
+      "relic": "清代瓷器",
+      "poem": "柠檬黄釉",
+      "poet": "唐英",
+      "dynasty": "清代",
+      "solar_term": "夏至",
+      "location": "景德镇",
+      "story": "雍正柠檬黄"
+    },
+    {
+      "id": 146,
+      "name": "淡黄",
+      "hex": "#FFF176",
+      "rgb": [
+        255,
+        241,
+        118
+      ],
+      "meaning": "浅黄色",
+      "relic": "宋代丝绸",
+      "poem": "淡黄柳",
+      "poet": "姜夔",
+      "dynasty": "宋代",
+      "solar_term": "清明",
+      "location": "杭州",
+      "story": "宋代淡雅服饰"
+    },
+    {
+      "id": 147,
+      "name": "柳黄",
+      "hex": "#C0CA33",
+      "rgb": [
+        192,
+        202,
+        51
+      ],
+      "meaning": "柳芽初黄",
+      "relic": "宋代绘画",
+      "poem": "柳色黄金嫩",
+      "poet": "李白",
+      "dynasty": "宋代",
+      "solar_term": "惊蛰",
+      "location": "开封",
+      "story": "春景画用色"
+    },
+    {
+      "id": 148,
+      "name": "葱绿",
+      "hex": "#7CB342",
+      "rgb": [
+        124,
+        179,
+        66
+      ],
+      "meaning": "葱叶之绿",
+      "relic": "明代瓷器",
+      "poem": "葱绿初熟",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "立夏",
+      "location": "景德镇",
+      "story": "明代绿釉"
+    },
+    {
+      "id": 149,
+      "name": "蕉绿",
+      "hex": "#558B2F",
+      "rgb": [
+        85,
+        139,
+        47
+      ],
+      "meaning": "芭蕉叶绿",
+      "relic": "清代绘画",
+      "poem": "红了樱桃绿了芭蕉",
+      "poet": "蒋捷",
+      "dynasty": "清代",
+      "solar_term": "夏至",
+      "location": "苏州",
+      "story": "江南园林配色"
+    },
+    {
+      "id": 150,
+      "name": "苔绿",
+      "hex": "#689F38",
+      "rgb": [
+        104,
+        159,
+        56
+      ],
+      "meaning": "青苔之绿",
+      "relic": "宋代绘画",
+      "poem": "苔痕上阶绿",
+      "poet": "刘禹锡",
+      "dynasty": "宋代",
+      "solar_term": "芒种",
+      "location": "开封",
+      "story": "山水画苔点"
+    },
+    {
+      "id": 151,
+      "name": "铜绿",
+      "hex": "#43A047",
+      "rgb": [
+        67,
+        160,
+        71
+      ],
+      "meaning": "铜锈之绿",
+      "relic": "青铜器",
+      "poem": "铜雀春深",
+      "poet": "杜牧",
+      "dynasty": "商代",
+      "solar_term": "春分",
+      "location": "安阳",
+      "story": "青铜器 patina"
+    },
+    {
+      "id": 152,
+      "name": "水绿",
+      "hex": "#81C784",
+      "rgb": [
+        129,
+        199,
+        132
+      ],
+      "meaning": "清水泛绿",
+      "relic": "宋代瓷器",
+      "poem": "春来江水绿如蓝",
+      "poet": "白居易",
+      "dynasty": "宋代",
+      "solar_term": "惊蛰",
+      "location": "龙泉",
+      "story": "龙泉青瓷釉色"
+    },
+    {
+      "id": 153,
+      "name": "碧色",
+      "hex": "#26A69A",
+      "rgb": [
+        38,
+        166,
+        154
+      ],
+      "meaning": "碧玉之色",
+      "relic": "玉器",
+      "poem": "碧水东流",
+      "poet": "李白",
+      "dynasty": "历代",
+      "solar_term": "夏至",
+      "location": "和田",
+      "story": "碧玉文化"
+    },
+    {
+      "id": 154,
+      "name": "霁蓝",
+      "hex": "#1E88E5",
+      "rgb": [
+        30,
+        136,
+        229
+      ],
+      "meaning": "雨霁天蓝",
+      "relic": "明代祭蓝",
+      "poem": "霁色初开",
+      "poet": "王勃",
+      "dynasty": "明代",
+      "solar_term": "清明",
+      "location": "景德镇",
+      "story": "宣德祭蓝釉"
+    },
+    {
+      "id": 155,
+      "name": "钴蓝",
+      "hex": "#1565C0",
+      "rgb": [
+        21,
+        101,
+        192
+      ],
+      "meaning": "钴料之蓝",
+      "relic": "元青花",
+      "poem": "钴蓝生辉",
+      "poet": "佚名",
+      "dynasty": "元代",
+      "solar_term": "夏至",
+      "location": "景德镇",
+      "story": "青花瓷钴料"
+    },
+    {
+      "id": 156,
+      "name": "雪白",
+      "hex": "#FAFAFA",
+      "rgb": [
+        250,
+        250,
+        250
+      ],
+      "meaning": "白雪之色",
+      "relic": "定窑白瓷",
+      "poem": "雪满山中",
+      "poet": "高启",
+      "dynasty": "宋代",
+      "solar_term": "大雪",
+      "location": "定窑",
+      "story": "定窑白瓷"
+    },
+    {
+      "id": 157,
+      "name": "粉白",
+      "hex": "#FFF8E1",
+      "rgb": [
+        255,
+        248,
+        225
+      ],
+      "meaning": "粉墙之白",
+      "relic": "徽派建筑",
+      "poem": "粉墙黛瓦",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "春分",
+      "location": "徽州",
+      "story": "江南建筑配色"
+    },
+    {
+      "id": 158,
+      "name": "墨黑",
+      "hex": "#212121",
+      "rgb": [
+        33,
+        33,
+        33
+      ],
+      "meaning": "墨汁之黑",
+      "relic": "徽墨",
+      "poem": "墨分五色",
+      "poet": "张彦远",
+      "dynasty": "唐代",
+      "solar_term": "大雪",
+      "location": "徽州",
+      "story": "墨之浓淡"
+    },
+    {
+      "id": 159,
+      "name": "玄黑",
+      "hex": "#1B1B1B",
+      "rgb": [
+        27,
+        27,
+        27
+      ],
+      "meaning": "玄色之黑",
+      "relic": "周代礼器",
+      "poem": "玄黄",
+      "poet": "易经",
+      "dynasty": "周代",
+      "solar_term": "冬至",
+      "location": "洛阳",
+      "story": "周礼玄端"
+    },
+    {
+      "id": 160,
+      "name": "酱色",
+      "hex": "#5D4037",
+      "rgb": [
+        93,
+        64,
+        55
+      ],
+      "meaning": "酱汁之色",
+      "relic": "紫砂壶",
+      "poem": "酱釉",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "秋分",
+      "location": "宜兴",
+      "story": "紫砂壶烧结色"
+    },
+    {
+      "id": 161,
+      "name": "褐色",
+      "hex": "#6D4C41",
+      "rgb": [
+        109,
+        76,
+        65
+      ],
+      "meaning": "褐色",
+      "relic": "明代家具",
+      "poem": "褐衣",
+      "poet": "杜甫",
+      "dynasty": "明代",
+      "solar_term": "霜降",
+      "location": "苏州",
+      "story": "明式家具配色"
+    },
+    {
+      "id": 162,
+      "name": "棕色",
+      "hex": "#795548",
+      "rgb": [
+        121,
+        85,
+        72
+      ],
+      "meaning": "棕榈之色",
+      "relic": "竹编",
+      "poem": "棕毛",
+      "poet": "佚名",
+      "dynasty": "宋代",
+      "solar_term": "寒露",
+      "location": "浙江",
+      "story": "棕编工艺"
+    },
+    {
+      "id": 163,
+      "name": "古铜",
+      "hex": "#5D4037",
+      "rgb": [
+        93,
+        64,
+        55
+      ],
+      "meaning": "青铜古色",
+      "relic": "青铜器",
+      "poem": "古铜色",
+      "poet": "佚名",
+      "dynasty": "商代",
+      "solar_term": "秋分",
+      "location": "安阳",
+      "story": "青铜器锈色"
+    },
+    {
+      "id": 164,
+      "name": "铁锈",
+      "hex": "#4E342E",
+      "rgb": [
+        78,
+        52,
+        46
+      ],
+      "meaning": "铁锈之色",
+      "relic": "铁器",
+      "poem": "铁马冰河",
+      "poet": "陆游",
+      "dynasty": "历代",
+      "solar_term": "大雪",
+      "location": "各地",
+      "story": "铁器氧化色"
+    },
+    {
+      "id": 165,
+      "name": "檀褐",
+      "hex": "#6D4C41",
+      "rgb": [
+        109,
+        76,
+        65
+      ],
+      "meaning": "檀木褐",
+      "relic": "佛造像",
+      "poem": "檀褐",
+      "poet": "佚名",
+      "dynasty": "唐代",
+      "solar_term": "秋分",
+      "location": "敦煌",
+      "story": "壁画人物肤色"
+    },
+    {
+      "id": 166,
+      "name": "黎色",
+      "hex": "#5D4037",
+      "rgb": [
+        93,
+        64,
+        55
+      ],
+      "meaning": "黎民服色",
+      "relic": "汉代服饰",
+      "poem": "黎民",
+      "poet": "孟子",
+      "dynasty": "汉代",
+      "solar_term": "霜降",
+      "location": "长安",
+      "story": "百姓服饰色"
+    },
+    {
+      "id": 167,
+      "name": "银白",
+      "hex": "#ECEFF1",
+      "rgb": [
+        236,
+        239,
+        241
+      ],
+      "meaning": "白银之色",
+      "relic": "银器",
+      "poem": "银汉迢迢",
+      "poet": "秦观",
+      "dynasty": "唐代",
+      "solar_term": "七夕",
+      "location": "长安",
+      "story": "唐代银器"
+    },
+    {
+      "id": 168,
+      "name": "素白",
+      "hex": "#FAFAFA",
+      "rgb": [
+        250,
+        250,
+        250
+      ],
+      "meaning": "素色之白",
+      "relic": "素纱襌衣",
+      "poem": "素衣",
+      "poet": "诗经",
+      "dynasty": "汉代",
+      "solar_term": "立春",
+      "location": "长沙",
+      "story": "马王堆素纱"
+    },
+    {
+      "id": 169,
+      "name": "珍珠",
+      "hex": "#F5F5F5",
+      "rgb": [
+        245,
+        245,
+        245
+      ],
+      "meaning": "珍珠光泽",
+      "relic": "珍珠饰品",
+      "poem": "珍珠帘",
+      "poet": "李煜",
+      "dynasty": "唐代",
+      "solar_term": "中秋",
+      "location": "合浦",
+      "story": "南珠文化"
+    },
+    {
+      "id": 170,
+      "name": "云母",
+      "hex": "#F5F5F5",
+      "rgb": [
+        245,
+        245,
+        245
+      ],
+      "meaning": "云母光泽",
+      "relic": "唐代绘画",
+      "poem": "云母屏风",
+      "poet": "李商隐",
+      "dynasty": "唐代",
+      "solar_term": "中秋",
+      "location": "长安",
+      "story": "唐代屏风用材"
+    },
+    {
+      "id": 171,
+      "name": "砗磲",
+      "hex": "#FFF8E1",
+      "rgb": [
+        255,
+        248,
+        225
+      ],
+      "meaning": "砗磲贝色",
+      "relic": "佛教七宝",
+      "poem": "砗磲",
+      "poet": "佛经",
+      "dynasty": "历代",
+      "solar_term": "立夏",
+      "location": "南海",
+      "story": "佛教七宝之一"
+    },
+    {
+      "id": 172,
+      "name": "退红",
+      "hex": "#F48FB1",
+      "rgb": [
+        244,
+        143,
+        177
+      ],
+      "meaning": "褪色后的粉红",
+      "relic": "唐代服饰",
+      "poem": "退红衫子",
+      "poet": "王建",
+      "dynasty": "唐代",
+      "solar_term": "春分",
+      "location": "长安",
+      "story": "唐代流行的一种淡红色"
+    },
+    {
+      "id": 173,
+      "name": "桃绯",
+      "hex": "#EC407A",
+      "rgb": [
+        236,
+        64,
+        122
+      ],
+      "meaning": "桃花盛开的深红",
+      "relic": "明代绘画",
+      "poem": "桃绯李白",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "春分",
+      "location": "南京",
+      "story": "明代仕女图常用色"
+    },
+    {
+      "id": 174,
+      "name": "海棠红",
+      "hex": "#E57373",
+      "rgb": [
+        229,
+        115,
+        115
+      ],
+      "meaning": "海棠花色",
+      "relic": "清代珐琅彩",
+      "poem": "海棠不惜胭脂色",
+      "poet": "陈与义",
+      "dynasty": "宋代",
+      "solar_term": "清明",
+      "location": "开封",
+      "story": "文人墨客笔下的经典花色"
+    },
+    {
+      "id": 175,
+      "name": "石榴裙",
+      "hex": "#D32F2F",
+      "rgb": [
+        211,
+        47,
+        47
+      ],
+      "meaning": "石榴花染成的红裙",
+      "relic": "唐代服饰",
+      "poem": "拜倒在石榴裙下",
+      "poet": "白居易",
+      "dynasty": "唐代",
+      "solar_term": "端午",
+      "location": "长安",
+      "story": "唐代女子最流行的裙色"
+    },
+    {
+      "id": 176,
+      "name": "猩猩红",
+      "hex": "#C62828",
+      "rgb": [
+        198,
+        40,
+        40
+      ],
+      "meaning": "猩猩血般的鲜红",
+      "relic": "汉代漆器",
+      "poem": "猩猩红袍",
+      "poet": "佚名",
+      "dynasty": "汉代",
+      "solar_term": "冬至",
+      "location": "长沙",
+      "story": "古代对极鲜艳红色的称呼"
+    },
+    {
+      "id": 177,
+      "name": "鸡血红",
+      "hex": "#8B0000",
+      "rgb": [
+        139,
+        0,
+        0
+      ],
+      "meaning": "鸡血石之色",
+      "relic": "印章石料",
+      "poem": "鸡血凝碧",
+      "poet": "佚名",
+      "dynasty": "清代",
+      "solar_term": "秋分",
+      "location": "昌化",
+      "story": "昌化鸡血石闻名天下"
+    },
+    {
+      "id": 178,
+      "name": "紫棠",
+      "hex": "#6A1B9A",
+      "rgb": [
+        106,
+        27,
+        154
+      ],
+      "meaning": "紫海棠色",
+      "relic": "清代服饰",
+      "poem": "紫棠花开",
+      "poet": "纳兰性德",
+      "dynasty": "清代",
+      "solar_term": "谷雨",
+      "location": "北京",
+      "story": "清代贵族喜爱的紫色"
+    },
+    {
+      "id": 179,
+      "name": "木槿紫",
+      "hex": "#7B1FA2",
+      "rgb": [
+        123,
+        31,
+        162
+      ],
+      "meaning": "木槿花紫",
+      "relic": "宋代绘画",
+      "poem": "木槿朝开暮落",
+      "poet": "王安石",
+      "dynasty": "宋代",
+      "solar_term": "夏至",
+      "location": "开封",
+      "story": "象征短暂而美丽的颜色"
+    },
+    {
+      "id": 180,
+      "name": "蓝靛",
+      "hex": "#1A237E",
+      "rgb": [
+        26,
+        35,
+        126
+      ],
+      "meaning": "深蓝靛青",
+      "relic": "苗族蜡染",
+      "poem": "蓝靛染衣",
+      "poet": "民歌",
+      "dynasty": "历代",
+      "solar_term": "小满",
+      "location": "贵州",
+      "story": "少数民族传统染色工艺"
+    },
+    {
+      "id": 181,
+      "name": "天青釉",
+      "hex": "#78909C",
+      "rgb": [
+        120,
+        144,
+        156
+      ],
+      "meaning": "汝窑天青",
+      "relic": "汝窑洗",
+      "poem": "雨过天青云破处",
+      "poet": "宋徽宗",
+      "dynasty": "宋代",
+      "solar_term": "清明",
+      "location": "汝州",
+      "story": "中国瓷器巅峰之色"
+    },
+    {
+      "id": 182,
+      "name": "粉青",
+      "hex": "#B2DFDB",
+      "rgb": [
+        178,
+        223,
+        219
+      ],
+      "meaning": "龙泉粉青釉",
+      "relic": "龙泉窑盘",
+      "poem": "粉青如玉",
+      "poet": "陆龟蒙",
+      "dynasty": "宋代",
+      "solar_term": "白露",
+      "location": "龙泉",
+      "story": "龙泉窑的代表釉色"
+    },
+    {
+      "id": 183,
+      "name": "梅子青",
+      "hex": "#4DB6AC",
+      "rgb": [
+        77,
+        182,
+        172
+      ],
+      "meaning": "青梅之色",
+      "relic": "龙泉窑瓶",
+      "poem": "青梅如豆",
+      "poet": "冯延巳",
+      "dynasty": "宋代",
+      "solar_term": "芒种",
+      "location": "龙泉",
+      "story": "龙泉窑另一种极致釉色"
+    },
+    {
+      "id": 184,
+      "name": "兔毫",
+      "hex": "#5D4037",
+      "rgb": [
+        93,
+        64,
+        55
+      ],
+      "meaning": "建盏兔毫纹",
+      "relic": "建窑盏",
+      "poem": "兔毫连盏烹云液",
+      "poet": "蔡襄",
+      "dynasty": "宋代",
+      "solar_term": "冬至",
+      "location": "建阳",
+      "story": "宋代斗茶专用茶具"
+    },
+    {
+      "id": 185,
+      "name": "曜变",
+      "hex": "#212121",
+      "rgb": [
+        33,
+        33,
+        33
+      ],
+      "meaning": "建盏曜变斑",
+      "relic": "建窑盏",
+      "poem": "曜变天目",
+      "poet": "佚名",
+      "dynasty": "宋代",
+      "solar_term": "冬至",
+      "location": "建阳",
+      "story": "窑变中最神秘稀有的品种"
+    },
+    {
+      "id": 186,
+      "name": "玳瑁",
+      "hex": "#8D6E63",
+      "rgb": [
+        141,
+        110,
+        99
+      ],
+      "meaning": "玳瑁壳色斑",
+      "relic": "唐代首饰",
+      "poem": "玳瑁帘",
+      "poet": "温庭筠",
+      "dynasty": "唐代",
+      "solar_term": "夏至",
+      "location": "广州",
+      "story": "南海珍宝制成的饰品色"
+    },
+    {
+      "id": 187,
+      "name": "螺钿",
+      "hex": "#ECEFF1",
+      "rgb": [
+        236,
+        239,
+        241
+      ],
+      "meaning": "贝壳镶嵌光泽",
+      "relic": "唐代琵琶",
+      "poem": "螺钿紫檀",
+      "poet": "白居易",
+      "dynasty": "唐代",
+      "solar_term": "中秋",
+      "location": "扬州",
+      "story": "传统漆器镶嵌工艺"
+    },
+    {
+      "id": 188,
+      "name": "烧蓝",
+      "hex": "#0288D1",
+      "rgb": [
+        2,
+        136,
+        209
+      ],
+      "meaning": "银胎烧制蓝釉",
+      "relic": "清代银器",
+      "poem": "烧蓝工艺",
+      "poet": "佚名",
+      "dynasty": "清代",
+      "solar_term": "立夏",
+      "location": "北京",
+      "story": "点翠的替代工艺"
+    },
+    {
+      "id": 189,
+      "name": "景泰蓝",
+      "hex": "#1976D2",
+      "rgb": [
+        25,
+        118,
+        210
+      ],
+      "meaning": "铜胎掐丝珐琅",
+      "relic": "景泰蓝瓶",
+      "poem": "景泰御前",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "冬至",
+      "location": "北京",
+      "story": "明代景泰年间盛行"
+    },
+    {
+      "id": 190,
+      "name": "法琅彩",
+      "hex": "#F06292",
+      "rgb": [
+        240,
+        98,
+        146
+      ],
+      "meaning": "宫廷瓷画彩",
+      "relic": "康熙法琅彩",
+      "poem": "法琅绝艺",
+      "poet": "乾隆",
+      "dynasty": "清代",
+      "solar_term": "春分",
+      "location": "北京",
+      "story": "中西合璧的宫廷艺术"
+    },
+    {
+      "id": 191,
+      "name": "广彩",
+      "hex": "#FF7043",
+      "rgb": [
+        255,
+        112,
+        67
+      ],
+      "meaning": "广州织金彩瓷",
+      "relic": "清代外销瓷",
+      "poem": "广彩绚丽",
+      "poet": "佚名",
+      "dynasty": "清代",
+      "solar_term": "大暑",
+      "location": "广州",
+      "story": "专为出口设计的华丽瓷色"
+    },
+    {
+      "id": 192,
+      "name": "花青",
+      "hex": "#3949AB",
+      "rgb": [
+        57,
+        73,
+        171
+      ],
+      "meaning": "国画颜料蓝",
+      "relic": "清代绘画",
+      "poem": "花青点染",
+      "poet": "石涛",
+      "dynasty": "清代",
+      "solar_term": "立冬",
+      "location": "扬州",
+      "story": "国画不可或缺的主色"
+    },
+    {
+      "id": 193,
+      "name": "曙红",
+      "hex": "#E91E63",
+      "rgb": [
+        233,
+        30,
+        99
+      ],
+      "meaning": "国画颜料红",
+      "relic": "近代绘画",
+      "poem": "曙色初动",
+      "poet": "齐白石",
+      "dynasty": "近代",
+      "solar_term": "春分",
+      "location": "北京",
+      "story": "齐白石画虾蟹常用色"
+    },
+    {
+      "id": 194,
+      "name": "赫石",
+      "hex": "#8D6E63",
+      "rgb": [
+        141,
+        110,
+        99
+      ],
+      "meaning": "国画颜料褐",
+      "relic": "宋代山水",
+      "poem": "赫石染秋",
+      "poet": "范宽",
+      "dynasty": "宋代",
+      "solar_term": "霜降",
+      "location": "开封",
+      "story": "山水画皴擦常用色"
+    },
+    {
+      "id": 195,
+      "name": "泥银",
+      "hex": "#BDBDBD",
+      "rgb": [
+        189,
+        189,
+        189
+      ],
+      "meaning": "银粉调制",
+      "relic": "唐代壁画",
+      "poem": "泥银勾勒",
+      "poet": "佚名",
+      "dynasty": "唐代",
+      "solar_term": "中秋",
+      "location": "敦煌",
+      "story": "壁画装饰用色"
+    },
+    {
+      "id": 196,
+      "name": "描金",
+      "hex": "#FFD700",
+      "rgb": [
+        255,
+        215,
+        0
+      ],
+      "meaning": "金线描绘",
+      "relic": "明代漆器",
+      "poem": "描金绘彩",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "春节",
+      "location": "扬州",
+      "story": "漆器高档装饰工艺"
+    },
+    {
+      "id": 197,
+      "name": "洒金",
+      "hex": "#FDD835",
+      "rgb": [
+        253,
+        216,
+        53
+      ],
+      "meaning": "金粉洒落",
+      "relic": "宋代笺纸",
+      "poem": "洒金笺",
+      "poet": "苏轼",
+      "dynasty": "宋代",
+      "solar_term": "立春",
+      "location": "宣城",
+      "story": "文人雅士书写用纸"
+    },
+    {
+      "id": 198,
+      "name": "冷金",
+      "hex": "#F9A825",
+      "rgb": [
+        249,
+        168,
+        37
+      ],
+      "meaning": "冷色调金",
+      "relic": "清代宫廷",
+      "poem": "冷金纸",
+      "poet": "乾隆",
+      "dynasty": "清代",
+      "solar_term": "冬至",
+      "location": "北京",
+      "story": "皇家御用纸张颜色"
+    },
+    {
+      "id": 199,
+      "name": "镀金",
+      "hex": "#FFECB3",
+      "rgb": [
+        255,
+        236,
+        179
+      ],
+      "meaning": "表面镀金",
+      "relic": "唐代佛像",
+      "poem": "金身罗汉",
+      "poet": "佚名",
+      "dynasty": "唐代",
+      "solar_term": "佛诞",
+      "location": "洛阳",
+      "story": "佛教造像常见工艺"
+    },
+    {
+      "id": 200,
+      "name": "鎏金",
+      "hex": "#FFB300",
+      "rgb": [
+        255,
+        179,
+        0
+      ],
+      "meaning": "汞金涂覆",
+      "relic": "汉代铜镜",
+      "poem": "鎏金溢彩",
+      "poet": "佚名",
+      "dynasty": "汉代",
+      "solar_term": "冬至",
+      "location": "西安",
+      "story": "古代金属表面处理技术"
+    },
+    {
+      "id": 201,
+      "name": "贴金",
+      "hex": "#FFD54F",
+      "rgb": [
+        255,
+        213,
+        79
+      ],
+      "meaning": "金箔粘贴",
+      "relic": "寺庙佛像",
+      "poem": "贴金塑像",
+      "poet": "佚名",
+      "dynasty": "历代",
+      "solar_term": "佛诞",
+      "location": "五台山",
+      "story": "宗教造像庄严色"
+    },
+    {
+      "id": 202,
+      "name": "云锦",
+      "hex": "#D81B60",
+      "rgb": [
+        216,
+        27,
+        96
+      ],
+      "meaning": "南京云锦色",
+      "relic": "明代龙袍",
+      "poem": "云锦天章",
+      "poet": "曹雪芹",
+      "dynasty": "明代",
+      "solar_term": "春节",
+      "location": "南京",
+      "story": "寸锦寸金的皇家织物"
+    },
+    {
+      "id": 203,
+      "name": "缂丝",
+      "hex": "#6A1B9A",
+      "rgb": [
+        106,
+        27,
+        154
+      ],
+      "meaning": "通经断纬织造",
+      "relic": "宋代缂丝画",
+      "poem": "一寸缂丝一寸金",
+      "poet": "庄绰",
+      "dynasty": "宋代",
+      "solar_term": "冬至",
+      "location": "定州",
+      "story": "织中之圣，皇家专享"
+    },
+    {
+      "id": 204,
+      "name": "夏布",
+      "hex": "#F5F5DC",
+      "rgb": [
+        245,
+        245,
+        220
+      ],
+      "meaning": "苎麻本色",
+      "relic": "汉代衣物",
+      "poem": "青青子衿",
+      "poet": "诗经",
+      "dynasty": "周代",
+      "solar_term": "夏至",
+      "location": "江西",
+      "story": "中国最早的纺织面料色"
+    },
+    {
+      "id": 205,
+      "name": "佛头青",
+      "hex": "#1A237E",
+      "rgb": [
+        26,
+        35,
+        126
+      ],
+      "meaning": "佛像发髻蓝",
+      "relic": "龙门石窟",
+      "poem": "佛头青发",
+      "poet": "佚名",
+      "dynasty": "北魏",
+      "solar_term": "佛诞",
+      "location": "洛阳",
+      "story": "佛教艺术中的神圣蓝色"
+    },
+    {
+      "id": 206,
+      "name": "纁色",
+      "hex": "#5D4037",
+      "rgb": [
+        93,
+        64,
+        55
+      ],
+      "meaning": "黄赤之色",
+      "relic": "周代礼服",
+      "poem": "玄纁束帛",
+      "poet": "礼记",
+      "dynasty": "周代",
+      "solar_term": "夏至",
+      "location": "洛阳",
+      "story": "象征地的颜色，与玄色配套"
+    },
+    {
+      "id": 207,
+      "name": "柠檬黄",
+      "hex": "#FDD835",
+      "rgb": [
+        253,
+        216,
+        53
+      ],
+      "meaning": "柠檬果皮黄",
+      "relic": "近代绘画",
+      "poem": "柠檬初熟",
+      "poet": "佚名",
+      "dynasty": "近代",
+      "solar_term": "小暑",
+      "location": "四川",
+      "story": "清新明亮的现代命名古色"
+    },
+    {
+      "id": 208,
+      "name": "柘黄",
+      "hex": "#F9A825",
+      "rgb": [
+        249,
+        168,
+        37
+      ],
+      "meaning": "柘木染黄",
+      "relic": "唐代龙袍",
+      "poem": "柘黄袍",
+      "poet": "王建",
+      "dynasty": "唐代",
+      "solar_term": "夏至",
+      "location": "长安",
+      "story": "隋唐皇帝专用服色"
+    },
+    {
+      "id": 209,
+      "name": "明黄",
+      "hex": "#FFEB3B",
+      "rgb": [
+        255,
+        235,
+        59
+      ],
+      "meaning": "明亮正黄",
+      "relic": "清代龙袍",
+      "poem": "明黄御用",
+      "poet": "清宫档案",
+      "dynasty": "清代",
+      "solar_term": "春节",
+      "location": "北京",
+      "story": "皇权至高无上的象征"
+    },
+    {
+      "id": 210,
+      "name": "栗壳",
+      "hex": "#4E342E",
+      "rgb": [
+        78,
+        52,
+        46
+      ],
+      "meaning": "栗子外壳褐",
+      "relic": "明代家具",
+      "poem": "栗壳色漆",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "白露",
+      "location": "苏州",
+      "story": "硬木家具常见色泽"
+    },
+    {
+      "id": 211,
+      "name": "蜜蜡",
+      "hex": "#FFECB3",
+      "rgb": [
+        255,
+        236,
+        179
+      ],
+      "meaning": "蜂蜡淡黄",
+      "relic": "清代印章",
+      "poem": "蜜蜡封题",
+      "poet": "佚名",
+      "dynasty": "清代",
+      "solar_term": "小满",
+      "location": "北京",
+      "story": "温润柔和的黄色"
+    },
+    {
+      "id": 212,
+      "name": "雌黄",
+      "hex": "#FFCA28",
+      "rgb": [
+        255,
+        202,
+        40
+      ],
+      "meaning": "雌黄矿石",
+      "relic": "魏晋写经",
+      "poem": "信口雌黄",
+      "poet": "晋书",
+      "dynasty": "晋代",
+      "solar_term": "立秋",
+      "location": "洛阳",
+      "story": "古人修改错字的涂料"
+    },
+    {
+      "id": 213,
+      "name": "洋红",
+      "hex": "#E91E63",
+      "rgb": [
+        233,
+        30,
+        99
+      ],
+      "meaning": "进口染料红",
+      "relic": "清代外销画",
+      "poem": "洋红点唇",
+      "poet": "佚名",
+      "dynasty": "清代",
+      "solar_term": "立夏",
+      "location": "广州",
+      "story": "清末传入的鲜艳红色"
+    },
+    {
+      "id": 214,
+      "name": "虾青",
+      "hex": "#546E7A",
+      "rgb": [
+        84,
+        110,
+        122
+      ],
+      "meaning": "活虾背壳色",
+      "relic": "齐白石画作",
+      "poem": "虾戏水",
+      "poet": "齐白石",
+      "dynasty": "近代",
+      "solar_term": "小暑",
+      "location": "北京",
+      "story": "水墨画中表现虾的透明感"
+    },
+    {
+      "id": 215,
+      "name": "鹦哥绿",
+      "hex": "#43A047",
+      "rgb": [
+        67,
+        160,
+        71
+      ],
+      "meaning": "鹦鹉羽毛绿",
+      "relic": "清代鸟笼",
+      "poem": "鹦哥学舌",
+      "poet": "佚名",
+      "dynasty": "清代",
+      "solar_term": "立夏",
+      "location": "北京",
+      "story": "鲜艳活泼的绿色"
+    },
+    {
+      "id": 216,
+      "name": "翠蓝",
+      "hex": "#00ACC1",
+      "rgb": [
+        0,
+        172,
+        193
+      ],
+      "meaning": "翠绿带蓝",
+      "relic": "明代点翠",
+      "poem": "翠蓝头面",
+      "poet": "佚名",
+      "dynasty": "明代",
+      "solar_term": "清明",
+      "location": "北京",
+      "story": "点翠工艺的核心色"
+    },
+    {
+      "id": 217,
+      "name": "萍绿",
+      "hex": "#81C784",
+      "rgb": [
+        129,
+        199,
+        132
+      ],
+      "meaning": "浮萍水面绿",
+      "relic": "宋代诗词",
+      "poem": "浮萍一道开",
+      "poet": "白居易",
+      "dynasty": "唐代",
+      "solar_term": "谷雨",
+      "location": "长安",
+      "story": "漂浮不定的象征色"
+    },
+    {
+      "id": 218,
+      "name": "槐绿",
+      "hex": "#558B2F",
+      "rgb": [
+        85,
+        139,
+        47
+      ],
+      "meaning": "槐树浓绿",
+      "relic": "唐代官道",
+      "poem": "槐厅议事",
+      "poet": "唐摭言",
+      "dynasty": "唐代",
+      "solar_term": "夏至",
+      "location": "长安",
+      "story": "科举及第的象征（槐厅）"
+    },
+    {
+      "id": 219,
+      "name": "柏绿",
+      "hex": "#33691E",
+      "rgb": [
+        51,
+        105,
+        30
+      ],
+      "meaning": "松柏常青",
+      "relic": "孔林古树",
+      "poem": "岁寒知松柏",
+      "poet": "论语",
+      "dynasty": "春秋",
+      "solar_term": "大寒",
+      "location": "曲阜",
+      "story": "长寿与坚贞的象征"
+    },
+    {
+      "id": 220,
+      "name": "沉香",
+      "hex": "#5D4037",
+      "rgb": [
+        93,
+        64,
+        55
+      ],
+      "meaning": "沉香木色",
+      "relic": "唐代香炉",
+      "poem": "沉香亭北",
+      "poet": "李白",
+      "dynasty": "唐代",
+      "solar_term": "冬至",
+      "location": "长安",
+      "story": "皇家园林中的名贵花木"
+    },
+    {
+      "id": 221,
+      "name": "伽罗",
+      "hex": "#4E342E",
+      "rgb": [
+        78,
+        52,
+        46
+      ],
+      "meaning": "顶级沉香",
+      "relic": "日本正仓院",
+      "poem": "伽罗香",
+      "poet": "源氏物语",
+      "dynasty": "唐代",
+      "solar_term": "大寒",
+      "location": "长安",
+      "story": "香道中的最高境界"
+    },
+    {
+      "id": 222,
+      "name": "枯茶",
+      "hex": "#8D6E63",
+      "rgb": [
+        141,
+        110,
+        99
+      ],
+      "meaning": "干枯茶叶",
+      "relic": "宋代茶盏",
+      "poem": "枯茶一碗",
+      "poet": "陆游",
+      "dynasty": "宋代",
+      "solar_term": "霜降",
+      "location": "杭州",
+      "story": "禅茶一味的意境色"
+    },
+    {
+      "id": 223,
+      "name": "老酒",
+      "hex": "#BCAAA4",
+      "rgb": [
+        188,
+        170,
+        164
+      ],
+      "meaning": "陈年酒色",
+      "relic": "汉代陶罐",
+      "poem": "老酒盈樽",
+      "poet": "曹操",
+      "dynasty": "汉代",
+      "solar_term": "冬至",
+      "location": "亳州",
+      "story": "岁月沉淀的琥珀色"
+    },
+    {
+      "id": 224,
+      "name": "桂黄",
+      "hex": "#FDD835",
+      "rgb": [
+        253,
+        216,
+        53
+      ],
+      "meaning": "金桂盛开",
+      "relic": "宋代团扇",
+      "poem": "桂子月中落",
+      "poet": "宋之问",
+      "dynasty": "唐代",
+      "solar_term": "白露",
+      "location": "杭州",
+      "story": "中秋时节的代表性颜色"
+    },
+    {
+      "id": 225,
+      "name": "菊黄",
+      "hex": "#FFB300",
+      "rgb": [
+        255,
+        179,
+        0
+      ],
+      "meaning": "菊花金黄",
+      "relic": "清代瓷器",
+      "poem": "满城尽带黄金甲",
+      "poet": "黄巢",
+      "dynasty": "唐代",
+      "solar_term": "霜降",
+      "location": "长安",
+      "story": "重阳节赏菊的主题色"
+    },
+    {
+      "id": 226,
+      "name": "梅红",
+      "hex": "#E91E63",
+      "rgb": [
+        233,
+        30,
+        99
+      ],
+      "meaning": "梅花艳红",
+      "relic": "明代笺纸",
+      "poem": "梅花香自苦寒来",
+      "poet": "警世贤文",
+      "dynasty": "历代",
+      "solar_term": "大寒",
+      "location": "南京",
+      "story": "坚韧不拔的精神象征"
+    },
+    {
+      "id": 227,
+      "name": "兰紫",
+      "hex": "#7E57C2",
+      "rgb": [
+        126,
+        87,
+        194
+      ],
+      "meaning": "兰花淡紫",
+      "relic": "屈原楚辞",
+      "poem": "纫秋兰以为佩",
+      "poet": "屈原",
+      "dynasty": "战国",
+      "solar_term": "春分",
+      "location": "楚国",
+      "story": "君子高洁品格的象征"
+    },
+    {
+      "id": 228,
+      "name": "荷红",
+      "hex": "#F48FB1",
+      "rgb": [
+        244,
+        143,
+        177
+      ],
+      "meaning": "荷花粉红",
+      "relic": "清代圆明园",
+      "poem": "映日荷花别样红",
+      "poet": "杨万里",
+      "dynasty": "宋代",
+      "solar_term": "大暑",
+      "location": "杭州",
+      "story": "夏日西湖的绝美景致"
+    },
+    {
+      "id": 229,
+      "name": "薇紫",
+      "hex": "#AB47BC",
+      "rgb": [
+        171,
+        71,
+        188
+      ],
+      "meaning": "蔷薇深紫",
+      "relic": "清代园林",
+      "poem": "水晶帘动微风起",
+      "poet": "高骈",
+      "dynasty": "唐代",
+      "solar_term": "立夏",
+      "location": "扬州",
+      "story": "满架蔷薇一院香"
+    },
+    {
+      "id": 230,
+      "name": "榴红",
+      "hex": "#D32F2F",
+      "rgb": [
+        211,
+        47,
+        47
+      ],
+      "meaning": "石榴花红",
+      "relic": "唐代妇女服饰",
+      "poem": "五月榴花照眼明",
+      "poet": "韩愈",
+      "dynasty": "唐代",
+      "solar_term": "芒种",
+      "location": "长安",
+      "story": "端午节令花卉色"
+    },
+    {
+      "id": 231,
+      "name": "梨白",
+      "hex": "#F5F5F5",
+      "rgb": [
+        245,
+        245,
+        245
+      ],
+      "meaning": "梨花洁白",
+      "relic": "宋代词意",
+      "poem": "梨花一枝春带雨",
+      "poet": "白居易",
+      "dynasty": "唐代",
+      "solar_term": "清明",
+      "location": "长安",
+      "story": "形容美人垂泪的凄美"
+    },
+    {
+      "id": 232,
+      "name": "瑞香",
+      "hex": "#E1BEE7",
+      "rgb": [
+        225,
+        190,
+        231
+      ],
+      "meaning": "瑞香花淡紫",
+      "relic": "宋代庭院",
+      "poem": "瑞香花发",
+      "poet": "苏轼",
+      "dynasty": "宋代",
+      "solar_term": "立春",
+      "location": "杭州",
+      "story": "预示吉祥的花色"
+    },
+    {
+      "id": 233,
+      "name": "含笑",
+      "hex": "#FFE0B2",
+      "rgb": [
+        255,
+        224,
+        178
+      ],
+      "meaning": "含笑花象牙白",
+      "relic": "岭南园林",
+      "poem": "含笑花开",
+      "poet": "佚名",
+      "dynasty": "历代",
+      "solar_term": "谷雨",
+      "location": "广东",
+      "story": "花香浓郁如香蕉"
+    },
+    {
+      "id": 234,
+      "name": "夜合",
+      "hex": "#FFF9C4",
+      "rgb": [
+        255,
+        249,
+        196
+      ],
+      "meaning": "夜合花乳白",
+      "relic": "唐代宫廷",
+      "poem": "夜合花开香满庭",
+      "poet": "元稹",
+      "dynasty": "唐代",
+      "solar_term": "夏至",
+      "location": "长安",
+      "story": "夜间闭合的奇特花卉"
+    },
+    {
+      "id": 235,
+      "name": "凌霄",
+      "hex": "#FF7043",
+      "rgb": [
+        255,
+        112,
+        67
+      ],
+      "meaning": "凌霄花橙红",
+      "relic": "宋代绘画",
+      "poem": "凌霄不屈己",
+      "poet": "白居易",
+      "dynasty": "唐代",
+      "solar_term": "大暑",
+      "location": "长安",
+      "story": "攀援向上的精神象征"
+    },
+    {
+      "id": 236,
+      "name": "牵牛",
+      "hex": "#5C6BC0",
+      "rgb": [
+        92,
+        107,
+        192
+      ],
+      "meaning": "牵牛花蓝紫",
+      "relic": "江户时代浮世绘",
+      "poem": "牵牛织女星",
+      "poet": "古诗十九首",
+      "dynasty": "汉代",
+      "solar_term": "七夕",
+      "location": "银河",
+      "story": "七夕节的象征花卉"
+    },
+    {
+      "id": 237,
+      "name": "鸢尾",
+      "hex": "#7E57C2",
+      "rgb": [
+        126,
+        87,
+        194
+      ],
+      "meaning": "鸢尾花深紫",
+      "relic": "近代园艺",
+      "poem": "鸢飞戾天",
+      "poet": "诗经",
+      "dynasty": "周代",
+      "solar_term": "小满",
+      "location": "江南",
+      "story": "形似鸢鸟尾巴的花朵"
+    },
+    {
+      "id": 238,
+      "name": "萱草",
+      "hex": "#FFA726",
+      "rgb": [
+        255,
+        167,
+        38
+      ],
+      "meaning": "忘忧草橙黄",
+      "relic": "唐代庭院",
+      "poem": "萱草生堂阶",
+      "poet": "孟郊",
+      "dynasty": "唐代",
+      "solar_term": "夏至",
+      "location": "洛阳",
+      "story": "中国的母亲花"
+    },
+    {
+      "id": 239,
+      "name": "凤仙",
+      "hex": "#EC407A",
+      "rgb": [
+        236,
+        64,
+        122
+      ],
+      "meaning": "凤仙花粉红",
+      "relic": "清代指甲套",
+      "poem": "金凤花开",
+      "poet": "杨万里",
+      "dynasty": "宋代",
+      "solar_term": "大暑",
+      "location": "杭州",
+      "story": "古代女子染指甲专用"
+    },
+    {
+      "id": 240,
+      "name": "鸡冠",
+      "hex": "#D32F2F",
+      "rgb": [
+        211,
+        47,
+        47
+      ],
+      "meaning": "鸡冠花鲜红",
+      "relic": "清代花盆",
+      "poem": "鸡冠花红",
+      "poet": "佚名",
+      "dynasty": "历代",
+      "solar_term": "秋分",
+      "location": "全国",
+      "story": "形状如鸡冠的独特花卉"
+    },
+    {
+      "id": 241,
+      "name": "雁来",
+      "hex": "#FF7043",
+      "rgb": [
+        255,
+        112,
+        67
+      ],
+      "meaning": "雁来红",
+      "relic": "清代盆栽",
+      "poem": "雁来红时",
+      "poet": "佚名",
+      "dynasty": "清代",
+      "solar_term": "寒露",
+      "location": "北京",
+      "story": "大雁南飞时变红的叶子"
+    },
+    {
+      "id": 242,
+      "name": "老少年",
+      "hex": "#C62828",
+      "rgb": [
+        198,
+        40,
+        40
+      ],
+      "meaning": "雁来红别名",
+      "relic": "清代文人画",
+      "poem": "老少年红",
+      "poet": "佚名",
+      "dynasty": "清代",
+      "solar_term": "霜降",
+      "location": "江南",
+      "story": "寓意返老还童的吉祥草"
+    },
+    {
+      "id": 243,
+      "name": "十样锦",
+      "hex": "#F06292",
+      "rgb": [
+        240,
+        98,
+        146
+      ],
+      "meaning": "扶桑花杂色",
+      "relic": "岭南庭院",
+      "poem": "十样锦花",
+      "poet": "佚名",
+      "dynasty": "历代",
+      "solar_term": "夏至",
+      "location": "广东",
+      "story": "一日一变的奇妙花色"
+    },
+    {
+      "id": 244,
+      "name": "木芙蓉",
+      "hex": "#F48FB1",
+      "rgb": [
+        244,
+        143,
+        177
+      ],
+      "meaning": "芙蓉花粉白",
+      "relic": "成都城垣",
+      "poem": "芙蓉城上草萋萋",
+      "poet": "苏轼",
+      "dynasty": "宋代",
+      "solar_term": "霜降",
+      "location": "成都",
+      "story": "成都别称蓉城的由来"
+    },
+    {
+      "id": 245,
+      "name": "醉芙蓉",
+      "hex": "#E91E63",
+      "rgb": [
+        233,
+        30,
+        99
+      ],
+      "meaning": "晚变深红的芙蓉",
+      "relic": "宋代绘画",
+      "poem": "醉脸春融",
+      "poet": "苏轼",
+      "dynasty": "宋代",
+      "solar_term": "霜降",
+      "location": "成都",
+      "story": "一日三变色的奇花"
+    },
+    {
+      "id": 246,
+      "name": "满堂红",
+      "hex": "#D32F2F",
+      "rgb": [
+        211,
+        47,
+        47
+      ],
+      "meaning": "紫薇花红",
+      "relic": "明代宫廷",
+      "poem": "谁道花无红百日",
+      "poet": "杨万里",
+      "dynasty": "宋代",
+      "solar_term": "大暑",
+      "location": "杭州",
+      "story": "花期长达百年的吉祥树"
+    }
   ]
 }

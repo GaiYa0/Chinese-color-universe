@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import type { ChineseColor, CityData } from "@/shared/types";
 
 interface CityDetailPanelProps {
@@ -11,6 +12,7 @@ export default function CityDetailPanel({
   selectedCity,
   colorMap,
 }: CityDetailPanelProps) {
+  const router = useRouter();
   if (!selectedCity) return null;
 
   return (
@@ -23,9 +25,11 @@ export default function CityDetailPanel({
         {selectedCity.colors.map((colorName) => {
           const color = colorMap.get(colorName);
           return (
-            <div
+            <button
               key={colorName}
-              className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 p-3"
+              type="button"
+              onClick={() => router.push(`/color/${encodeURIComponent(colorName)}`)}
+              className="flex cursor-pointer items-center gap-2 rounded-xl border border-white/10 bg-white/5 p-3 text-left transition hover:border-white/25 hover:bg-white/10"
             >
               <div
                 className="h-10 w-10 rounded-lg"
@@ -38,7 +42,7 @@ export default function CityDetailPanel({
                   <p className="text-xs text-white/50">{color.meaning}</p>
                 )}
               </div>
-            </div>
+            </button>
           );
         })}
       </div>

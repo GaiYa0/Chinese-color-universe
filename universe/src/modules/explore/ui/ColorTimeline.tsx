@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
+import { useRouter } from "next/navigation";
 import { DYNASTY_TIMELINE } from "@/shared/types";
 import type { ChineseColor } from "@/shared/types";
 
@@ -8,10 +9,12 @@ interface ColorTimelineProps {
   colors: ChineseColor[];
 }
 
-const colorMap = new Map<string, ChineseColor>();
-
 export default function ColorTimeline({ colors }: ColorTimelineProps) {
-  colors.forEach((c) => colorMap.set(c.name, c));
+  const router = useRouter();
+  const colorMap = useMemo(
+    () => new Map(colors.map((c) => [c.name, c])),
+    [colors]
+  );
   const [selectedDynasty, setSelectedDynasty] = useState<string | null>("song");
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -38,15 +41,16 @@ export default function ColorTimeline({ colors }: ColorTimelineProps) {
           className="pointer-events-none absolute bottom-14 left-0 right-0 h-1 opacity-30"
           style={{
             background: `linear-gradient(90deg, ${DYNASTY_TIMELINE.map((d, i) => {
-              const firstColor = colorMap.get(d.colors[0])?.hex ?? "#4a5568";
-              return `${firstColor} ${(i / (DYNASTY_TIMELINE.length - 1)) * 100}%`;
+              const theme =
+                colorMap.get(d.colors[0])?.hex ?? d.themeHex;
+              return `${theme} ${(i / (DYNASTY_TIMELINE.length - 1)) * 100}%`;
             }).join(", ")})`,
             borderRadius: 2,
           }}
         />
         {DYNASTY_TIMELINE.map((d) => {
           const isSelected = selectedDynasty === d.id;
-          const primaryColor = colorMap.get(d.colors[0])?.hex ?? "#4a5568";
+          const primaryColor = colorMap.get(d.colors[0])?.hex ?? d.themeHex;
           return (
             <button
               key={d.id}
@@ -79,6 +83,12 @@ export default function ColorTimeline({ colors }: ColorTimelineProps) {
                 }}
               >
                 <p className="font-semibold text-white">{d.name}</p>
+                <p
+                  className="mt-0.5 font-mono text-[10px] text-white/40"
+                  title="文档内主色 HEX（colors 数据）"
+                >
+                  {colorMap.get(d.colors[0])?.hex ?? d.themeHex}
+                </p>
                 <p className="mt-1 text-xs text-white/50">
                   {d.start > 0 ? d.start : `${Math.abs(d.start)} BC`} —{" "}
                   {d.end > 0 ? d.end : `${Math.abs(d.end)} BC`}
@@ -97,11 +107,14 @@ export default function ColorTimeline({ colors }: ColorTimelineProps) {
             if (!dynasty) return null;
             return dynasty.colors.map((colorName, i) => {
               const c = colorMap.get(colorName);
-              const hex = c?.hex ?? "#333";
+              const hex =
+                c?.hex ?? dynasty.paletteHex[i] ?? "#333";
               return (
-                <div
+                <button
                   key={colorName}
-                  className="glass-card overflow-hidden rounded-2xl transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
+                  type="button"
+                  onClick={() => router.push(`/color/${encodeURIComponent(colorName)}`)}
+                  className="glass-card overflow-hidden rounded-2xl text-left transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
                   style={{
                     animation: "fadeInUp 0.4s ease-out forwards",
                     animationDelay: `${i * 0.05}s`,
@@ -117,7 +130,7 @@ export default function ColorTimeline({ colors }: ColorTimelineProps) {
                     </p>
                   </div>
                   <div className="p-4">
-                    <p className="text-sm text-white/60">{c?.hex}</p>
+                    <p className="font-mono text-sm text-white/60">{hex}</p>
                     {c?.meaning && (
                       <p className="mt-2 text-sm text-white/80">{c.meaning}</p>
                     )}
@@ -125,7 +138,7 @@ export default function ColorTimeline({ colors }: ColorTimelineProps) {
                       <p className="mt-1 text-xs text-white/50">代表文物：{c.relic}</p>
                     )}
                   </div>
-                </div>
+                </button>
               );
             });
           })()}

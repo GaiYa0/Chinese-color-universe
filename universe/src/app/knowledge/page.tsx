@@ -1,12 +1,10 @@
-import { fetchCulturalRelations, fetchColors } from "@/services/data/data";
+import { fetchColors } from "@/services/data/data";
+import { buildKnowledgeGraphFromColors } from "@/modules/graph/lib/buildFromColors";
 import KnowledgeGraph from "@/modules/graph/ui/KnowledgeGraph";
 
 export default async function KnowledgePage() {
-  const [relations, colorsData] = await Promise.all([
-    fetchCulturalRelations(),
-    fetchColors(),
-  ]);
-
+  const colorsData = await fetchColors();
+  const { nodes, edges } = buildKnowledgeGraphFromColors(colorsData);
   const colors = colorsData.map((c) => ({ name: c.name, hex: c.hex }));
 
   return (
@@ -16,11 +14,11 @@ export default async function KnowledgePage() {
           文化关系图 · 知识图谱
         </h1>
         <p className="mb-8 text-white/60">
-          输入颜色名称，探索与之关联的朝代、文物、文化符号。支持 BFS 广度探索与 DFS 深度探索。
+          输入颜色名称，探索与之关联的朝代、文物、文化符号。支持 BFS 广度探索与 DFS 深度探索。已根据全部中国色数据自动构建知识图谱。
         </p>
         <KnowledgeGraph
-          nodes={relations.nodes}
-          edges={relations.edges}
+          nodes={nodes}
+          edges={edges}
           colors={colors}
         />
       </div>

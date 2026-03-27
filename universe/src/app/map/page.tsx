@@ -8,12 +8,12 @@ export default async function MapPage() {
   ]);
 
   return (
-    <main className="cosmic-bg min-h-screen pt-20 pb-16">
-      <div className="mx-auto max-w-6xl px-6">
-        <h1 className="mb-2 text-2xl font-bold text-white md:text-3xl">
+    <main className="cosmic-bg flex h-screen flex-col overflow-hidden pt-20">
+      <div className="mx-auto flex min-h-0 w-full max-w-6xl flex-1 flex-col px-6 pb-4 pt-2">
+        <h1 className="mb-1 shrink-0 text-xl font-bold text-white md:text-2xl">
           中国色地图 · CHINA COLOR MAP
         </h1>
-        <p className="mb-8 text-white/60">
+        <p className="mb-3 shrink-0 text-sm text-white/60">
           点击城市查看文化色彩 · 景德镇 · 敦煌 · 北京
         </p>
         <ChinaColorMap cities={mapData.cities} colors={colors} />

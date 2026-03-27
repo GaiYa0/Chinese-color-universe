@@ -4,21 +4,22 @@ import { useEffect, useRef } from "react";
 import * as echarts from "echarts";
 
 import type { CityData } from "@/shared/types";
-import { createChinaMapOption } from "@/modules/map/lib/mapOptionBuilder";
-import { buildScatterData } from "@/modules/map/lib/mapTransform";
+import type { RegionData } from "@/modules/map/lib/regionHeatmap";
+import { buildRegionHeatmapData } from "@/modules/map/lib/regionHeatmap";
+import { createChinaHeatmapOption } from "@/modules/map/lib/mapOptionBuilder";
 
 interface ChinaMapRendererProps {
   cities: CityData[];
   mapReady: boolean;
   setMapReady: (ready: boolean) => void;
-  onCitySelect: (cityName: string) => void;
+  onRegionSelect: (region: RegionData | null) => void;
 }
 
 export default function ChinaMapRenderer({
   cities,
   mapReady,
   setMapReady,
-  onCitySelect,
+  onRegionSelect,
 }: ChinaMapRendererProps) {
   const chartRef = useRef<HTMLDivElement>(null);
 
@@ -56,19 +57,29 @@ export default function ChinaMapRenderer({
     const chart = echarts.getInstanceByDom(chartRef.current);
     if (!chart) return;
 
-    const scatterData = buildScatterData(cities);
-    chart.setOption(createChinaMapOption(scatterData));
+    const regionData = buildRegionHeatmapData(cities);
+    const option = createChinaHeatmapOption({ regionData });
+    chart.setOption(option, { replaceMerge: ["series"] });
+
+    const handleClick = (params: unknown) => {
+      const p = params as { name?: string; data?: { regionKey?: string } };
+      const regionKey = p?.data?.regionKey ?? p?.name;
+      if (!regionKey) {
+        onRegionSelect(null);
+        return;
+      }
+      const region = regionData.find(
+        (r) => r.name === regionKey || r.name === p?.name
+      );
+      onRegionSelect(region ?? null);
+    };
 
     chart.off("click");
-    chart.on("click", (params: unknown) => {
-      const p = params as { data?: { name?: string } };
-      const name = p?.data?.name;
-      if (name) onCitySelect(name);
-    });
-  }, [cities, mapReady, onCitySelect]);
+    chart.on("click", handleClick);
+  }, [cities, mapReady, onRegionSelect]);
 
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-white/10" style={{ height: 500 }}>
+    <div className="relative h-full min-h-[280px] overflow-hidden rounded-2xl border border-white/10">
       <div ref={chartRef} className="h-full w-full" />
       {!mapReady && (
         <div className="absolute inset-0 flex items-center justify-center bg-[#050510]/80">

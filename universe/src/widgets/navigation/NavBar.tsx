@@ -8,6 +8,7 @@ const navItems = [
   { href: "/galaxy", label: "颜色星空" },
   { href: "/knowledge", label: "知识图谱" },
   { href: "/map", label: "中国色地图" },
+  { href: "/tools", label: "色工具" },
   { href: "/timeline", label: "时间轴" },
   { href: "/today", label: "今日中国色" },
 ];
@@ -26,7 +27,10 @@ export default function NavBar() {
         </Link>
         <div className="flex gap-1 rounded-full border border-white/10 bg-black/40 px-2 py-1 backdrop-blur-xl">
           {navItems.map((item) => {
-            const isActive = pathname === item.href;
+            const isActive =
+              item.href === "/tools"
+                ? pathname === "/tools" || pathname.startsWith("/tools/")
+                : pathname === item.href;
             return (
               <Link key={item.href} href={item.href}>
                 <span
