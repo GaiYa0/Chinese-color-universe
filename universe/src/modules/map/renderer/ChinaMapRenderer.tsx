@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as echarts from "echarts";
 
 import type { CityData } from "@/shared/types";
@@ -15,6 +15,13 @@ interface ChinaMapRendererProps {
   onRegionSelect: (region: RegionData | null) => void;
 }
 
+const CHINA_MAP_SOURCES = [
+  "https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json",
+  "https://geo.datav.aliyun.com/areas_v3/bound/100000.json",
+  // 境外/Vercel 访问时阿里云偶发失败，用 jsDelivr 上的 GeoJSON 作兜底（标准 FeatureCollection）
+  "https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/json/china.json",
+];
+
 export default function ChinaMapRenderer({
   cities,
   mapReady,
@@ -22,34 +29,51 @@ export default function ChinaMapRenderer({
   onRegionSelect,
 }: ChinaMapRendererProps) {
   const chartRef = useRef<HTMLDivElement>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!chartRef.current) return;
 
     const chart = echarts.init(chartRef.current, "dark");
+    let cancelled = false;
 
     const loadMap = async () => {
-      const urls = [
-        "https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json",
-        "https://geo.datav.aliyun.com/areas_v3/bound/100000.json",
-      ];
-      for (const url of urls) {
+      await Promise.resolve();
+      if (cancelled) return;
+      setLoadError(null);
+      setMapReady(false);
+
+      let registered = false;
+      for (const url of CHINA_MAP_SOURCES) {
+        if (cancelled) return;
         try {
           const res = await fetch(url, { mode: "cors" });
-          if (res.ok) {
-            const geoJson = await res.json();
-            echarts.registerMap("china", geoJson);
-            break;
-          }
+          if (!res.ok) continue;
+          const geoJson = await res.json();
+          if (!geoJson || typeof geoJson !== "object") continue;
+          echarts.registerMap("china", geoJson as never);
+          registered = true;
+          break;
         } catch {
           continue;
         }
       }
-      setMapReady(true);
+
+      if (cancelled) return;
+
+      if (registered) {
+        setMapReady(true);
+      } else {
+        setLoadError("地图轮廓加载失败（多为网络或跨域限制）。请换网络或稍后重试。");
+        setMapReady(false);
+      }
     };
 
     loadMap();
-    return () => chart.dispose();
+    return () => {
+      cancelled = true;
+      chart.dispose();
+    };
   }, [setMapReady]);
 
   useEffect(() => {
@@ -59,7 +83,15 @@ export default function ChinaMapRenderer({
 
     const regionData = buildRegionHeatmapData(cities);
     const option = createChinaHeatmapOption({ regionData });
-    chart.setOption(option, { replaceMerge: ["series"] });
+    try {
+      chart.setOption(option, { replaceMerge: ["series"] });
+    } catch (e) {
+      console.error("[ChinaMapRenderer] setOption failed", e);
+      queueMicrotask(() => {
+        setLoadError("地图渲染失败，请刷新页面重试。");
+      });
+      return;
+    }
 
     const handleClick = (params: unknown) => {
       const p = params as { name?: string; data?: { regionKey?: string } };
@@ -81,9 +113,14 @@ export default function ChinaMapRenderer({
   return (
     <div className="relative h-full min-h-[280px] overflow-hidden rounded-2xl border border-white/10">
       <div ref={chartRef} className="h-full w-full" />
-      {!mapReady && (
+      {!mapReady && !loadError && (
         <div className="absolute inset-0 flex items-center justify-center bg-[#050510]/80">
           <p className="text-white/60">加载地图中...</p>
+        </div>
+      )}
+      {loadError && (
+        <div className="absolute inset-0 flex items-center justify-center bg-[#050510]/90 px-6">
+          <p className="text-center text-sm text-white/70">{loadError}</p>
         </div>
       )}
     </div>
