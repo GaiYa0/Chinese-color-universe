@@ -52,60 +52,84 @@
 
 ### 环境要求
 
-- Python 3.9+
-- Node.js 18+（推荐 20+）
-- **pnpm**（`universe` 推荐使用）或 npm
-- CMake 3.10+（可选，用于 C++ 演示）
+| 依赖 | 说明 |
+|------|------|
+| **Node.js** | 18+，推荐 **20+**（与 Next 16 / TypeScript 工具链匹配） |
+| **包管理** | `universe` 推荐 **pnpm**；亦可用 **npm** 或 **yarn** |
+| **Python** | 3.9+（仅在使用 **backend** 或 **`run.sh`** 时需要） |
+| **CMake** | 3.10+（可选，仅编译 **cpp/** 演示） |
 
-### 方式 A：启动「中国色宇宙」（Next.js，推荐）
+### 推荐：启动「中国色宇宙」（Next.js）
+
+日常开发与答辩演示**优先使用本方式**。页面数据来自 `universe/public/data/*.json`，**无需先起后端**即可浏览工具页、地图、星系等。
 
 ```bash
 cd universe
-pnpm install   # 或 npm install
-pnpm dev       # 默认 http://localhost:3000
+pnpm install          # 或: npm install
+pnpm dev              # 开发服，默认 http://localhost:3000
 ```
 
-生产构建：
+- 端口被占用时：`pnpm dev -- --port 3001`（或 `npx next dev -p 3001`）。
+- 生产环境：
 
 ```bash
 cd universe
 pnpm build
-pnpm start
+pnpm start            # 默认仍监听 3000，可用 PORT=8080 pnpm start 指定端口
 ```
 
-### 方式 B：`run.sh` 联调经典前后端
+### 数据文件说明
 
-脚本会启动 **FastAPI（8000）** 与 **Vite 前端（3000）**：
+- 运行时读取目录：**`universe/public/data/`**（`colors.json`、`cultural_map.json`、`cultural_relations.json`、`color_groups.json`）。
+- 若你修改了仓库根目录 **`data/`** 下的同名 JSON，请同步到前端：
 
 ```bash
-./run.sh
+# 在仓库根目录执行（按需调整文件名）
+cp data/colors.json data/cultural_map.json data/cultural_relations.json data/color_groups.json \
+  universe/public/data/
 ```
 
-访问 http://localhost:3000  
+### 一键脚本：`run.sh`（经典 Vite + FastAPI）
 
-（若仅启动后端，见下方「仅后端」。）
+用于**旧版 SPA** 与 **Python API** 联调（`frontend` 已配置 `vite` 监听 **3000** 并代理 `/api` → `8000`）。
 
-### 仅启动后端
+```bash
+chmod +x run.sh    # 仅需执行一次
+./run.sh           # 须在 chinese-colors-platform 根目录执行
+```
+
+脚本行为概要：
+
+1. 进入 `backend/`：若无 `venv` 则创建，安装 `requirements.txt`，后台启动 `uvicorn main:app --host 0.0.0.0 --port 8000`（**无 `--reload`**，改代码需重启）。
+2. 进入 `frontend/`：若无 `node_modules` 则 `npm install`，后台启动 `npm run dev`（**http://localhost:3000**）。
+
+停止：在运行 `run.sh` 的终端按 **Ctrl+C**。
+
+### 仅启动后端（FastAPI）
 
 ```bash
 cd backend
+python3 -m venv venv
+source venv/bin/activate          # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn main:app --reload --port 8000
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
+
+API 默认：**http://127.0.0.1:8000**（文档常见路径：`/docs`）。
 
 ### 仅启动经典 Vite 前端
 
 ```bash
 cd frontend
 npm install
-npm run dev
+npm run dev        # http://localhost:3000（见 frontend/vite.config.js）
 ```
 
 ### 编译 C++ 演示（可选）
 
 ```bash
 cd cpp
-mkdir build && cd build
+mkdir -p build && cd build
 cmake ..
 make
 ./color_ds
@@ -121,6 +145,7 @@ chinese-colors-platform/
 │   ├── cultural_map.json
 │   └── color_groups.json
 ├── universe/                  # Next.js「中国色宇宙」
+│   ├── public/data/           # 运行时读取的 JSON（与根目录 data/ 保持同步）
 │   ├── src/app/               # App Router：/tools、/galaxy、/map、/timeline 等
 │   ├── src/modules/           # 按领域拆分（toolkit、explore、graph…）
 │   └── package.json
